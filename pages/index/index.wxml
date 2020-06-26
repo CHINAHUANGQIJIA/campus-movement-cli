@@ -1,0 +1,252 @@
+<!--index.wxml-->
+<tabbar selected="{{2}}"></tabbar>
+<view class="tab">
+	<view class="tab-item {{currentTab==1?'active':''}}" bindtap="switch" data-id="#z1" data-current="1">排行榜</view>
+	<view class="tab-item {{currentTab==0?'active':''}}" bindtap="swichNav" data-current="0">主页</view>
+	<view class="tab-item {{currentTab==2?'active':''}}" bindtap="switch" data-id="#z2" data-current="2">课程</view>
+</view>
+
+<!-- <swiper class="tab-content" current="{{currentTab}}" duration="300" bindchange="switchTab" style="height:4000rpx"> -->
+<!-- 每个滑块(swiper-item)都有一个index，也就是current要获取的值 -->
+
+<!-- <swiper-item>
+		<scroll-view scroll-y="true"> -->
+<!--搜索框-->
+<view class="main">
+	<image class="icon1" src="https://jojoho.oss-cn-beijing.aliyuncs.com/images/2020-06-25/159308070661712.png" />
+	<view class="main-text">
+		<label bindtap="bindEnter" data-item='search'>
+			<input class="text" placeholder="请输入关键字进行搜索" value="{{data.value}}" placeholder-class="phcolor" />
+		</label>
+	</view>
+	<image class="icon2" src="https://jojoho.oss-cn-beijing.aliyuncs.com/images/2020-06-25/159308074667827.png" />
+</view>
+
+<view class="container">
+	<!--轮播图-->
+	<view class="swiper-container">
+		<swiper indicator-dots="true" autoplay="true" interval="3000" duration="500" circular="true" current="0" bindchange="swiperChange" class="swiper">
+			<block wx:for="{{imgUrls}}" wx:key="unique">
+				<swiper-item>
+					<image src="{{item.url}}" class="img" bindtap="swipclick" />
+					<!-- <text class="swiper-img-title">{{item.title}}</text> -->
+				</swiper-item>
+
+			</block>
+		</swiper>
+	</view>
+	<!--今日天气-->
+	<!-- <view class="top">
+		<view class="weather row">
+			<image class="weather-img" src="{{Icon}}" bindtap="showPopup"></image>
+			<view><text>{{weather.tmp}}℃</text></view>
+		</view>
+	</view> -->
+	<popup id='popup' icon='{{Icon}}' tmp='{{weather.tmp}}' cond_txt='{{weather.cond_txt}}' wind_dir='{{weather.wind_dir}}' hum='{{weather.hum}}' pcpn='{{weather.pcpn}}' brf='{{life[3].brf}}' txt='{{life[3].txt}}' brf1='{{life[1].brf}}' txt1='{{life[1].txt}}' brf2='{{life[5].brf}}' txt2='{{life[5].txt}}' one='{{sanIcon}}' tmp_min='{{san[0].tmp_min}}' tmp_max='{{san[0].tmp_max}}' one1='{{sanIcon1}}' tmp_min1='{{san[1].tmp_min}}' tmp_max1='{{san[1].tmp_max}}' one2='{{sanIcon2}}' tmp_min2='{{san[2].tmp_min}}' tmp_max2='{{san[2].tmp_max}}' btn_ok='X' bind:error="_error" bind:success="_success">
+	</popup>
+
+
+
+</view>
+
+<!--应用-->
+<view class="apply row">
+	<!--天气-->
+	<view class="apply-box" bindtap="onjump" data-item="weather">
+		<view class="apply-border" style="background-image: linear-gradient(-45deg, #589bff 0%, #fc7cc9 100%);">
+			<image class="apply-img" src="https://kkkksslls.oss-cn-beijing.aliyuncs.com/exe/tianqi.png" />
+		</view>
+		<view class="apply-txt"><text>天气</text>
+		</view>
+	</view>
+	<!--统计-->
+	<view class="apply-box" bindtap="onjumps" data-item="statistics">
+		<view class="apply-border" style="background-image: linear-gradient(-45deg, #fff131 0%, #f542ad 100%);">
+			<image class="apply-img" src="https://kkkksslls.oss-cn-beijing.aliyuncs.com/exe/tongji.png" />
+		</view>
+		<view class="apply-txt"><text>统计</text>
+		</view>
+	</view>
+	<!--成就卡-->
+	<view class="apply-box" bindtap="qidai">
+		<view class="apply-border" style=" background-image: linear-gradient(-45deg, #31beff 0%, #52ffae 100%);">
+			<image class="apply-img" src="https://kkkksslls.oss-cn-beijing.aliyuncs.com/exe/chengjiu.png" />
+		</view>
+		<view class="apply-txt"><text>成就卡</text></view>
+	</view>
+	<!--邀请-->
+	<view class="apply-box" bindtap="qidai">
+		<view class="apply-border" style=" background-image: linear-gradient(-45deg, #fd8282 0%, #f84545 100%);">
+			<image class="apply-img" src="https://kkkksslls.oss-cn-beijing.aliyuncs.com/exe/yaoqing.png" />
+		</view>
+		<view class="apply-txt"><text>邀请</text></view>
+	</view>
+</view>
+<!--为你推荐-->
+<view class="title-row">
+	<text class="container-title">为您推荐</text>
+	<image src="https://kkkksslls.oss-cn-beijing.aliyuncs.com/exe/chakangengduo-hui.png" class="right" bindtap="onjumpmotion" data-item="course"></image>
+</view>
+
+<scroll-view scroll-x="true">
+	<view class="exercise">
+		<view class="exercise-card" wx:for="{{exercise}}" wx:key="index">
+			<view id="{{index}}" class="cover" style="display: {{ _index == index ? 'none' : 'block' }};" bindtap="videoPlay">
+				<image class="exercise-img" src="{{item.child[0].avatar}}"></image>
+				<!-- <image class="videoPlay" src="https://kkkksslls.oss-cn-beijing.aliyuncs.com/exe/xihuan.png" mode="scaleToFill"></image> -->
+			</view>
+			<video src="{{item.child[1].url}}" show-mute-btn="true" title="{{item.child[0].course_name}}" enable-play-gesture="true" requestFullScreen exitFullScreen autoplay="true" id="{{index}}" class='video' wx:if="{{_index == index}}">
+			</video>
+			<view class="exe-txt-1" bindtap="onvideo" data-item="{{item}}"><text>{{item.type}}</text></view>
+			<view class="exe-txt-2" bindtap="onvideo" data-item="{{item}}"><text>{{item.child[0].difficulty}}·{{item.child[0].fat_burning}}千卡·{{item.child[0].lesson_number}}节课</text></view>
+		</view>
+	</view>
+</scroll-view>
+
+<!--今日看点-->
+<view class="title-row">
+	<text class="container-title">今日看点</text>
+	<image src="https://kkkksslls.oss-cn-beijing.aliyuncs.com/exe/chakangengduo-hui.png" class="right" bindtap="onjumpmotion" data-item="information"></image>
+</view>
+
+<view class="news">
+	<view class="news-card row" wx:for="{{news}}" wx:if="{{index<3}}">
+		<view bindtap="unjump" data-item="{{item}}">
+			<image class="news-img" src="{{item.picUrl}}"></image>
+		</view>
+		<view class="news-text">
+			<view class="news-title"><text>{{item.title}}</text></view>
+			<view class="news-txt">
+				<text class="ctime">{{item.ctime}}</text>
+			<text>校园运动</text></view>
+
+		</view>
+
+	</view>
+</view>
+<!-- </scroll-view> -->
+<!-- </swiper-item>
+
+	<swiper-item>
+		<scroll-view scroll-y="true"> -->
+
+<view class="title-row" id="z1">
+	<text class="container-title">排行榜</text>
+</view>
+<!-- draw : 确定 canvas的id
+per : 进度百分比 (1-100)
+r: 圆的半径 (按px,最终转化成rpx) -->
+<!-- <view  wx:if="{{infos != ''}}"> -->
+
+
+<view class="circle" wx:if="{{infos != ''}}">
+	<circle draw='circwewle' per='{{infos.goStepNumber/80}}' a='{{infos.goStepNumber}}' r='200' />
+</view>
+<!--个人信息 -->
+<view class="ranking row" wx:if="{{infos != ''}}">
+	<view class="ranking-txts row">
+		<view>
+			<image class="ranking-img" src="{{infos.avatar}}"></image>
+		</view>
+		<view class="ranking-texts">
+			<view style="height: 60rpx;line-height:60rpx;overflow:hidden; "><text>{{infos.userName}}</text>
+				<image class="ranking-text-img" src="https://kkkksslls.oss-cn-beijing.aliyuncs.com/exe/nan.png" wx:if="{{infos.gender == '男'}}"></image>
+				<image class="ranking-text-img" src="https://kkkksslls.oss-cn-beijing.aliyuncs.com/exe/nv.png" wx:if="{{infos.gender == '女'}}"></image>
+			</view>
+			<view style="height: 40rpx; width:300rpx;font-size:24rpx; line-height:40rpx;color: gray;" wx:if="{{infos.address != null}}"><text style="width:300rpx;">{{infos.address}}</text></view>
+		</view>
+	</view>
+	<view class="icon">
+		<image src="https://kkkksslls.oss-cn-beijing.aliyuncs.com/exe/paobu-lan.png" class="icon-img"></image>
+		<view class="ranking-like">
+			<text style="color:gray;">{{infos.goStepNumber}}</text>
+		</view>
+
+		<image src="https://kkkksslls.oss-cn-beijing.aliyuncs.com/exe/fengsi.png" class="icon-imgs"></image>
+		<view class="ranking-like">
+			<text style="color:gray;">{{infos.fans}}</text>
+		</view>
+	</view>
+</view>
+<!--排行榜-->
+<view class="row ranking-card" wx:for="{{people}}" wx:key="id" wx:if="{{index<20}}">
+	<view class="ranking-num">
+		<text class="index">{{index+1}}</text>
+	</view>
+	<view class="ranking-txt row">
+		<view>
+			<image class="ranking-img" src="{{item.avatar}}"></image>
+		</view>
+		<view class="ranking-text">
+			<view style="height: 60rpx;line-height:60rpx;overflow:hidden; "><text class="name" style="font-size: 30rpx;">{{item.userName}}</text>
+				<image class="ranking-text-img" src="https://kkkksslls.oss-cn-beijing.aliyuncs.com/exe/nan.png" wx:if="{{item.gender == '男'}}"></image>
+				<image class="ranking-text-img" src="https://kkkksslls.oss-cn-beijing.aliyuncs.com/exe/nv.png" wx:if="{{item.gender == '女'}}"></image>
+			</view>
+			<view style="height: 40rpx;line-height:40rpx;color: gray; font-size: 30rpx;" wx:if="{{item.address != null}}"><text>{{item.address}}</text></view>
+		</view>
+
+
+	</view>
+	<view class="ranking-like">
+		<text>{{item.goStepNumber}}</text>
+
+	</view>
+	<!--喜欢-->
+	<view class="ranking-like-img">
+		<image wx:if="{{item.zan ==false}}" animation="{{animation}}" bindtap='zan' data-id='{{index}}' class='collect_img' src="https://kkkksslls.oss-cn-beijing.aliyuncs.com/exe/buxihuan.png"></image>
+		<image wx:if="{{item.zan ==true}}" animation="{{animation}}" bindtap='zan' data-id='{{index}}' class="collect_img" src="https://kkkksslls.oss-cn-beijing.aliyuncs.com/exe/xihuan.png"></image>
+	</view>
+
+</view>
+<!-- </scroll-view>
+</swiper-item> -->
+
+
+
+
+
+<!-- <swiper-item>
+		<scroll-view scroll-y="true"> -->
+
+<!-- <view wx:for="{{getSearch}}" data-item="{{item}}">
+				<view> {{item.teacher_name}} </view>
+			</view> -->
+<!--课程专题-->
+<view class="title-row" id="z2">
+	<text class="container-title">课程专题</text>
+</view>
+<view class="history" bindtap="onjump" data-item="history" >
+	<view class="history-box row">
+		<view class="history-box-a">
+			<view class="history-img">
+				<image src="https://kkkksslls.oss-cn-beijing.aliyuncs.com/exe/shijian.png" class="his-img"></image>
+			</view>
+		</view>
+		<view class="history-box-b">
+			<view class="history-title">我看过的课程</view>
+			<view class="history-text">{{getSearch.length}}个课程</view>
+		</view>
+	</view>
+</view>
+<view class="cou" wx:for="{{exercise}}" wx:key="item" wx:key="" id="{{index}}" data-item="{{item}}">
+	<view class="cou-top">{{item.type}}</view>
+	<view class="cou-box">
+		<view class="cou-list row" wx:for="{{item.child}}" wx:if="{{index<3}}" wx:for-item="cell" bindtap="onvideoz" data-item="{{item}}" data-index="{{index}}" wx:key="cell">
+			<view class="cou-list-img-box">
+				<image class="cou-list-img" src="{{cell.avatar}}"></image>
+			</view>
+			<view class="cou-txt">
+				<view class="cell-txt"><text>{{cell.course_name}}</text></view>
+				<view class="cell-text"><text>{{cell.local}}·{{cell.fat_burning}}千卡·{{cell.difficulty}}</text></view>
+			</view>
+
+		</view>
+		<view class="course-end" bindtap="onjumpmotion" data-item="course">查看更多</view>
+	</view>
+</view>
+
+<view class="container-end"></view>
+
+<!-- </scroll-view>
+	</swiper-item>
+</swiper> -->

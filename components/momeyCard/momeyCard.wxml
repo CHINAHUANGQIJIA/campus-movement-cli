@@ -1,0 +1,6 @@
+<!--components/momeyCard/money-card.wxml-->
+<view class="cardList">
+<view class="money-card" wx:for="{{money_list}}" wx:for-item="item" bindtap="onTap" data-price="{{item.price}}" style="background-color:{{item.selected  ? item.selectedColor : item.color}};color:{{item.selected? item.color: null}};">
+<text class="{{item.price==='自定义金额' ? zhidingyi-money:''}}">{{item.price}}</text>
+</view>
+</view>

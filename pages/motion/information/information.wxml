@@ -1,0 +1,47 @@
+<!--pages/motion/information/information.wxml-->
+<tabbar selected="{{0}}"></tabbar>
+<!--轮播图-->  
+    <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">  
+      <block wx:for="{{url}}" wx:if="{{index<5}}" wx:for-index="index">  
+        <swiper-item>  
+          <image src="{{item}}" class="slide-image" mode="aspectFill"/>  
+          
+        </swiper-item>  
+
+      </block>  
+    </swiper>  
+<!--时间轴-->
+<view class="weui-txt">运动信息</view>
+<view class='weui-cell-third'>
+
+  <block wx:for="{{news}}" wx:key="*this">
+    <view class='weui-cell-list'>
+      <view class='weui-cell-circle'></view>
+      <view class='weui-cell-line'>
+      <view class="card">
+        <view class='weui-cell-time'>{{item.time}}</view>
+        <view class="weui-box">
+        <view class="box-a" bindtap="unjump" data-item="{{item}}">
+        <image class="weui-img" src="{{item.url}}"></image></view>
+         <view class="box-b" bindtap="unjump" data-item="{{item}}">
+           <view class='weui-cell-name'>{{item.content}}</view>
+           <view class='weui-cell-event'>校园运动</view>
+       </view>
+        </view> 
+        <view class="weui-end row">
+        <image wx:if="{{item.zan ==false}}" bindtap='zan' data-id='{{index}}' class="weui-end-img" src="https://kkkksslls.oss-cn-beijing.aliyuncs.com/exe/buxihuan.png"></image>
+        <image wx:if="{{item.zan ==true}}" bindtap='zan' data-id='{{index}}' class="weui-end-img" src="https://kkkksslls.oss-cn-beijing.aliyuncs.com/exe/xihuan.png"></image>
+
+
+
+
+
+        <image class="weui-end-img" wx:if="{{item.sou ==false}}" bindtap='sou' data-id='{{index}}' src="https://kkkksslls.oss-cn-beijing.aliyuncs.com/exe/bushoucang.png"></image>
+         <image class="weui-end-img" wx:if="{{item.sou ==true}}" bindtap='sou' data-id='{{index}}' src="https://kkkksslls.oss-cn-beijing.aliyuncs.com/exe/shoucang.png"></image>
+         <image class="weui-end-img" src="https://kkkksslls.oss-cn-beijing.aliyuncs.com/exe/pinlun.png"></image>
+        </view>
+      </view>
+    </view>
+    </view>
+  </block>
+</view>

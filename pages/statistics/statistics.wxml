@@ -1,0 +1,75 @@
+<!--个人信息展示-->
+<view class="aa">
+<view class="container">
+	<!-- <open-data class="open-data-userAvatarUrl" type="userAvatarUrl"></open-data> -->
+
+	<!-- <open-data class="open-data-userNickname" type="userNickName" lang="zh_CN"></open-data> -->
+</view>
+<!--月份数据展示-->
+
+
+</view>
+<!--配置属性
+    default-value="{{value}}"
+    week-text="{{week}}" 
+    last-month="{{lastMonth}}"
+    next-month="{{nextMonth}}"
+-->
+<Calendar id="Calendar" bind:select="select"></Calendar>
+
+<view class="sousuo-box" wx:if="{{exe ==true}}">
+	<view class="{{box}}" bindtap='toggle' >
+	<image src="{{btnText}}" class="toggle-img"></image>
+	</view>
+	<view hidden="{{hid}}" wx:for="{{arr}}" class="arr-card">
+	<view class="arr-row">
+		<view class="arr-left">{{item.gmtCreate}}</view>
+		<view class="arr-right">
+		<image class="arr-right-img" src="https://kkkksslls.oss-cn-beijing.aliyuncs.com/exe/shijian.png"></image>
+		{{item.sportTime}}min</view>
+	</view>
+	<view class="arr-row">
+		<view class="km">{{item.sportDistance}}公里</view></view>
+		<view class="arr-row">
+		<view class="arr-box">
+		<image class="arr-right-img" src="https://kkkksslls.oss-cn-beijing.aliyuncs.com/exe/Paobu.png"></image>
+		{{item.stepNumber}}步</view>
+	  <view class="arr-box">
+		<image class="arr-right-img" src="https://kkkksslls.oss-cn-beijing.aliyuncs.com/exe/sulv.png"></image>
+		{{item.sportDistance}}m/km</view>
+	  <view class="arr-box">
+		<image class="arr-right-img" src="https://kkkksslls.oss-cn-beijing.aliyuncs.com/exe/moshi.png"></image>
+		{{item.sportPattern}}</view>
+		</view>
+	</view>
+	<view class="sol"></view>
+</view>
+
+<view class="sousuo-box" wx:if="{{exe ==false}}">
+<view class="wu-box">今天没有运动哦~</view>
+</view>
+
+
+<!--步数统计-->
+<view class="step-num">
+	<text class="step-title">步数分布统计</text>
+	<view class="row step-card">
+<view class="step-num-txt"><text>3000步以下</text></view>
+<view class="progress-box">
+  <progress percent="{{percent1}}" color="rgb(255, 158, 32)" active stroke-width="10" border-radius="10" />
+</view><view class="progress-num">{{stepnum1}}天</view></view>
+
+<view class="row step-card">
+<view class="step-num-txt"><text>5000步以下</text></view>
+<view class="progress-box">
+  <progress percent="{{percent2}}" color="rgb(255, 158, 32)" active stroke-width="10" border-radius="10" />
+</view><view class="progress-num">{{stepnum2}}天</view></view>
+
+<view class="row step-card">
+<view class="step-num-txt"><text>10000步以上</text></view>
+<view class="progress-box">
+  <progress percent="{{percent3}}" color="rgb(255, 158, 32)" active stroke-width="10" border-radius="10" />
+</view><view class="progress-num">{{stepnum3}}天</view></view>
+
+
+</view>

@@ -1,0 +1,57 @@
+
+
+
+   <image class="apply-img" wx:if="{{record.length != 0}}" src="https://jojoho.oss-cn-beijing.aliyuncs.com/images/2020-06-19/159257260343147.png"></image>
+<view class="card"  wx:for="{{record}}" wx:key="{{index}}"  data-id="{{index}}" bindtap="don">
+
+ <view class="card-image">
+
+
+ <image class="im" src="https://jojoho.oss-cn-beijing.aliyuncs.com/images/2020-06-19/15925732672646.png"></image>
+ </view>
+ <view class="card-tt">
+  <text class="time-text">{{item.gmtCreate}} ·</text>
+     <text class="type-text"> {{item.sportPattern}}</text>
+  <view class="fen-1-5">
+<view class="fen-1-5-ve1">
+<image class="fen-1-5-ve1-1" src="https://jojoho.oss-cn-beijing.aliyuncs.com/images/2020-06-16/159229871778415.png">
+
+</image>
+<view class="fen-1-5-ve1-2">
+<text class="fen-1-5-ve1-2-text">{{item.sportAverageSpeed}} m/s</text>
+</view>
+<view class="fen-1-5-ve1-3">
+<text class="fen-1-5-ve1-3-text">均速</text>
+</view>
+</view>
+<view class="fen-1-5-ve2">
+<image class="fen-1-5-ve2-1" src="https://jojoho.oss-cn-beijing.aliyuncs.com/images/2020-06-16/159229861529764.png">
+
+</image>
+<view class="fen-1-5-ve2-2">
+<text class="fen-1-5-ve2-2-text">{{item.sportTime}}</text>
+</view>
+<view class="fen-1-5-ve2-3">
+<text class="fen-1-5-ve2-3-text">用时</text>
+</view>
+</view>
+<view class="fen-1-5-ve3">
+<image class="fen-1-5-ve3-1" src="https://jojoho.oss-cn-beijing.aliyuncs.com/images/2020-06-16/1592298675231105.png">
+</image>
+<view class="fen-1-5-ve3-2">
+<text class="fen-1-5-ve3-2-text">{{item.sportDistance}} km</text>
+</view>
+<view class="fen-1-5-ve3-3">
+<text class="fen-1-5-ve3-3-text">里程</text>
+</view>
+</view>
+</view>
+
+</view>
+</view> 
+<view wx:if="{{record.length === 0}}" wx:key="{{index}}">
+<image class="jiji" src="https://jojoho.oss-cn-beijing.aliyuncs.com/images/2020-06-18/159246402626760.png"></image>
+ <view class="fanbtn" bindtap="yundon">
+    <text class="btn-text" >去运动</text>
+    </view>
+</view>

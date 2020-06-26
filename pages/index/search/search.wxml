@@ -1,0 +1,54 @@
+<!--搜索框-->
+<view class="search">
+<view class="main">
+	<image class="icon1" src="https://jojoho.oss-cn-beijing.aliyuncs.com/images/2020-06-25/159308070661712.png" />
+	<view class="main-text">
+		<label bindtap="bindEnter" data-item='search'>
+			<input class="text" placeholder="请输入关键字进行搜索" auto-focus bindinput="bindInput" value="{{inputValue}}" placeholder-class="phcolor" />
+		</label>
+	</view>
+	<image bindtap="setSearchStorage" class="icon2" src="https://jojoho.oss-cn-beijing.aliyuncs.com/images/2020-06-25/159308074667827.png" />
+</view>
+	<!-- <view class="page-bd">
+		<view class="search-row">
+			<image class="search-img" src="https://kkkksslls.oss-cn-beijing.aliyuncs.com/exe/search.png"></image>
+			<view class="search-box">
+				<input class="page-search" placeholder="请输入搜索的图书" auto-focus bindinput="bindInput" value="{{inputValue}}" />
+			</view>
+			<view class="search-btn" bindtap="clearInput"><text>X</text></view>
+		</view>
+		<view class="sear-btn" bindtap="setSearchStorage">搜索</view>
+	</view> -->
+	<!--搜索记录-->
+	<view class="row del-box">
+		<text class="del-text">历史记录</text>
+		<view class="del right" bindtap="clearSearchStorage">
+			<image class="del-img" src="https://jojoho.oss-cn-beijing.aliyuncs.com/images/2020-06-25/1593081482308112.png"></image>
+		</view>
+	</view>
+
+	<view class="row">
+		<view class="record" wx:for="{{search}}" wx:for-item="itemName" id="{{index}}" bindtap="dian" bindlongpress='shan' wx:if="{{index<15}}">
+			<view class="record-box" wx:if="{{itemName!= ''}}"> {{itemName}} </view>
+		</view>
+	</view>
+
+
+<!--搜索内容-->
+<view class="record-con">
+	<view wx:for="{{searchbooks}}" data-item="{{item}}" class="history-box" bindtap="onvideoz">
+<view class="history-box-a">
+<image class="history-box-a-img" src="{{item.avatar}}"></image>
+</view>
+<view class="history-box-b">
+<view class="history-box-title">
+{{item.courseName}}
+</view>
+<view class="history-box-txt">
+{{item.difficulty}}·{{item.time}}分钟·{{item.fatBurning}}千卡
+</view>
+</view>
+	</view>
+
+</view>
+</view>

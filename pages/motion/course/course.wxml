@@ -1,0 +1,149 @@
+<!--pages/motion/course/course.wxml-->
+<tabbar selected="{{1}}"></tabbar>
+
+
+<view>
+	<scroll-view scroll-x="true" class="tab-h" scroll-left="{{scrollLeft}}">
+		<view class="tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="swichNav">全部</view>
+		<view class="tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="swichNav">瑜伽</view>
+		<view class="tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="swichNav">跑步</view>
+		<view class="tab-item {{currentTab==3?'active':''}}" data-current="3" bindtap="swichNav">训练营</view>
+		<view class="tab-item {{currentTab==4?'active':''}}" data-current="4" bindtap="swichNav">体能</view>
+		<view class="tab-item {{currentTab==5?'active':''}}" data-current="5" bindtap="swichNav">减脂</view>
+	</scroll-view>
+	<swiper class="tab-content" current="{{currentTab}}" duration="300" bindchange="switchTab" style="height:{{winHeight}}rpx ">
+		<!--全部-->
+		<swiper-item>
+			<scroll-view scroll-y="true" class="scoll-h">
+				<!--全部课程-->
+				<view class="course" wx:for="{{exercise}}" wx:key="item" wx:key="">
+					<view class="course-list row" wx:for="{{item.child}}" wx:for-item="cell" bindtap="onvideo" data-item="{{item}}" data-index="{{index}}" wx:key="cell">
+						<view class="course-list-img-box">
+							<image class="course-list-img" src="{{cell.avatar}}"></image>
+						</view>
+						<view class="cell-a">
+							<image src="https://kkkksslls.oss-cn-beijing.aliyuncs.com/exe/gerenxinxi.png" class="cell-img"></image>
+							<view class="cell-name">{{cell.teacher_name}}</view>
+						</view>
+
+						<view class="course-txt">
+							<view class="cell-txt"><text>{{cell.course_name}}</text></view>
+							<view class="cell-text"><text>{{cell.local}}·{{cell.fat_burning}}千卡·{{cell.difficulty}}</text></view>
+						</view>
+					</view>
+				</view>
+			</scroll-view>
+		</swiper-item>
+
+		<!--体能-->
+		<swiper-item>
+			<scroll-view scroll-y="true" class="scoll-h">
+
+				<view class="course" wx:for="{{exercise}}" wx:key="item" wx:key="" wx:if="{{index==0}}">
+					<view class="course-list row" wx:for="{{item.child}}" wx:for-item="cell" wx:key="item" bindtap="onvideo" data-index="{{index}}" data-item="{{item}}">
+						<view class="course-list-img-box">
+							<image class="course-list-img" src="{{cell.avatar}}"></image>
+						</view>
+						<view class="cell-a">
+							<image src="https://kkkksslls.oss-cn-beijing.aliyuncs.com/exe/gerenxinxi.png" class="cell-img"></image>
+							<view class="cell-name">{{cell.teacher_name}}</view>
+						</view>
+
+						<view class="course-txt">
+							<view class="cell-txt"><text>{{cell.type}}</text></view>
+							<view class="cell-text"><text>{{cell.local}}·{{cell.fat_burning}}千卡·{{cell.difficulty}}</text></view>
+						</view>
+					</view>
+				</view>
+			</scroll-view>
+		</swiper-item>
+
+		<!--瑜伽-->
+		<swiper-item>
+			<scroll-view scroll-y="true" class="scoll-h">
+				<view class="course" wx:for="{{exercise}}" wx:key="item" wx:key="" wx:if="{{index==1}}">
+					<view class="course-list row" wx:for="{{item.child}}" wx:for-item="cell" wx:key="item" bindtap="onvideo" data-index="{{index}}" data-item="{{item}}">
+						<view class="course-list-img-box">
+							<image class="course-list-img" src="{{cell.avatar}}"></image>
+						</view>
+						<view class="cell-a">
+							<image src="https://kkkksslls.oss-cn-beijing.aliyuncs.com/exe/gerenxinxi.png" class="cell-img"></image>
+							<view class="cell-name">{{cell.teacher_name}}</view>
+						</view>
+
+						<view class="course-txt">
+							<view class="cell-txt"><text>{{cell.type}}</text></view>
+							<view class="cell-text"><text>{{cell.local}}·{{cell.fat_burning}}千卡·{{cell.difficulty}}</text></view>
+						</view>
+					</view>
+				</view>
+			</scroll-view>
+		</swiper-item>
+
+		<!--跑步-->
+		<swiper-item>
+			<scroll-view scroll-y="true" class="scoll-h">
+				<view class="course" wx:for="{{exercise}}" wx:key="item" wx:key="" wx:if="{{index==2}}">
+					<view class="course-list row" wx:for="{{item.child}}" wx:for-item="cell" wx:key="item" bindtap="onvideo" data-index="{{index}}" data-item="{{item}}">
+						<view class="course-list-img-box">
+							<image class="course-list-img" src="{{cell.avatar}}"></image>
+						</view>
+						<view class="cell-a">
+							<image src="https://kkkksslls.oss-cn-beijing.aliyuncs.com/exe/gerenxinxi.png" class="cell-img"></image>
+							<view class="cell-name">{{cell.teacher_name}}</view>
+						</view>
+
+						<view class="course-txt">
+							<view class="cell-txt"><text>{{cell.type}}</text></view>
+							<view class="cell-text"><text>{{cell.local}}·{{cell.fat_burning}}千卡·{{cell.difficulty}}</text></view>
+						</view>
+					</view>
+				</view>
+			</scroll-view>
+		</swiper-item>
+		<!--训练营-->
+		<swiper-item>
+			<scroll-view scroll-y="true" class="scoll-h">
+				<view class="course" wx:for="{{exercise}}" wx:key="item" wx:key="" wx:if="{{index==3}}">
+					<view class="course-list row" wx:for="{{item.child}}" wx:for-item="cell" wx:key="item" bindtap="onvideo" data-index="{{index}}" data-item="{{item}}">
+						<view class="course-list-img-box">
+							<image class="course-list-img" src="{{cell.avatar}}"></image>
+						</view>
+						<view class="cell-a">
+							<image src="https://kkkksslls.oss-cn-beijing.aliyuncs.com/exe/gerenxinxi.png" class="cell-img"></image>
+							<view class="cell-name">{{cell.teacher_name}}</view>
+						</view>
+
+						<view class="course-txt">
+							<view class="cell-txt"><text>{{cell.type}}</text></view>
+							<view class="cell-text"><text>{{cell.local}}·{{cell.fat_burning}}千卡·{{cell.difficulty}}</text></view>
+						</view>
+					</view>
+				</view>
+			</scroll-view>
+		</swiper-item>
+
+		<!--减脂-->
+		<swiper-item>
+			<scroll-view scroll-y="true" class="scoll-h">
+				<view class="course" wx:for="{{exercise}}" wx:key="item" wx:key="" wx:if="{{index==4}}">
+					<view class="course-list row" wx:for="{{item.child}}" wx:for-item="cell" wx:key="item" bindtap="onvideo" data-index="{{index}}" data-item="{{item}}">
+						<view class="course-list-img-box">
+							<image class="course-list-img" src="{{cell.avatar}}"></image>
+						</view>
+						<view class="cell-a">
+							<image src="https://kkkksslls.oss-cn-beijing.aliyuncs.com/exe/gerenxinxi.png" class="cell-img"></image>
+							<view class="cell-name">{{cell.teacher_name}}</view>
+						</view>
+
+						<view class="course-txt">
+							<view class="cell-txt"><text>{{cell.type}}</text></view>
+							<view class="cell-text"><text>{{cell.local}}·{{cell.fat_burning}}千卡·{{cell.difficulty}}</text></view>
+						</view>
+					</view>
+				</view>
+			</scroll-view>
+		</swiper-item>
+
+	</swiper>
+</view>

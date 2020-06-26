@@ -1,0 +1,40 @@
+<view class="container">
+
+<form bindsubmit="formSubmit" class="from">
+  <view class="fb-info">
+    <view class="info-box">
+      <input class="info" placeholder="请输入反馈主题(必填)" auto-focus="true" maxlength="30" bindinput="titleInput" value="{{title}}" />
+      <image class="clear-icon" src="https://jojoho.oss-cn-beijing.aliyuncs.com/images/2020-06-19/159252773929953.png" wx:if="{{ title.length > 0 }}" catchtap="clearTitle"></image>
+    </view>
+  </view>
+  <view class="fb-info">
+    <view class="info-box">
+      <input class="info" placeholder="输入你手机号(选填)" maxlength="30" type="number" bindinput="contactInput" value="{{contact}}" />
+      <image class="clear-icon" src="https://jojoho.oss-cn-beijing.aliyuncs.com/images/2020-06-19/159252776040126.png" wx:if="{{ contact.length > 0 }}" catchtap="clearContact"></image>
+    </view>
+  </view>
+
+  <view class="fb-body">
+    <textarea class="content" placeholder="请输入反馈内容(必填)" bindinput="contentInput" maxlength="140"  value="{{content}}" />
+    <image class="clear-icon" src="https://jojoho.oss-cn-beijing.aliyuncs.com/images/2020-06-19/1592527775353135.png" wx:if="{{content.length > 0 }}" catchtap="clearcontent"></image>
+    <view class="weui-uploader__files" id="uploaderFiles">
+      <block wx:for="{{files}}" wx:key="this">
+        <view class="weui-uploader__file" bindtap="previewImage" id="{{item}}">
+         <image class="imagede" bindtap="imagede" src="../../../image/icon/icon_cha.png"></image>
+       
+          <image class="weui-uploader__img" src="{{item}}" mode="aspectFill" />
+        </view>
+      </block>
+      <view class="weui-uploader__input-box" wx:if="{{ files.length < 2 }}">
+        <view class="weui-uploader__input" bindtap="chooseImage"></view>
+
+        <view class="weui-uploader__input" bindtap="upload"></view>
+
+      </view>
+    </view>
+    <view class="text-count">{{contentLength}}/140</view>
+  </view>
+
+  <view class="fb-btn" bindtap="submitFeedback">提交</view>
+  </form>
+</view>

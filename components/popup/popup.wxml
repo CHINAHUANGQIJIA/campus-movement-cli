@@ -1,0 +1,53 @@
+<view class="wx-popup" hidden="{{flag}}" catchtouchmove="ture">
+  <view class='popup-container'>
+  <view class="row box">
+  <view class="box-a">
+    <image class="box-a-img" src="{{icon}}"></image>
+    <view>{{tmp}}℃</view>
+  </view>
+  <view class="box-b">
+  <view>天气状态:{{cond_txt}}</view>
+   <view>风向：{{wind_dir}}</view>
+  </view>
+  <view class="box-c">
+ <view>相对湿度:{{hum}}</view>
+ <view>降水量：{{pcpn}}</view>
+  </view>
+  </view>
+
+   <view class="card">
+   <view class="card-a"><text class="card-a-txt">运动指数：</text>{{brf}},{{txt}}</view>
+   <view class="card-a"><text class="card-a-txt">穿衣风格：</text>{{brf1}},{{txt1}}</view>
+   <view class="card-a"><text class="card-a-txt">紫外线指数：</text>{{brf2}},{{txt2}}</view>
+   </view>
+
+   <view class="san">
+   <view>未来三天</view>
+   <view class="row">
+   <view class="san-card">
+   <view>明天</view>
+   <image class="one-img" src="{{one}}"></image>
+   <view>{{tmp_min}}~{{tmp_max}}</view>
+   </view>
+
+     <view class="san-card">
+   <view>后天</view>
+   <image class="one-img" src="{{one1}}"></image>
+   <view>{{tmp_min1}}~{{tmp_max1}}</view>
+   </view>
+
+     <view class="san-card">
+   <view>大后天</view>
+   <image class="one-img" src="{{one2}}"></image>
+   <view>{{tmp_min2}}~{{tmp_max2}}</view>
+   </view>
+   </view>
+   </view>
+
+
+   <!--按钮-->
+    <view class="wx-popup-btn">
+      <text class="btn-ok" bindtap='_success'>{{btn_ok}}</text>
+    </view>
+  </view>
+</view>

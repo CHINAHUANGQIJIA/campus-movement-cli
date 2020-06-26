@@ -1,0 +1,60 @@
+<!--视频-->
+<video id="myVideo" src="{{item.url}}"show-mute-btn="true" title="{{item.course_name}}" enable-play-gesture="true" requestFullScreen exitFullScreen autoplay="false" controls="true" 
+muted="true" enable-danmu show-fullscreen-btn auto-pause-if-navigate auto-pause-if-open-native show-play-btn object-fit="fill" bindpause="bindpause" bindended="bindended" >
+      <cover-view class="video_cover" wx:if="{{isShow}}" bindtap="bindplay">
+        <cover-image src="{{item.avatar}}" mode="widthFix"></cover-image>
+        <!-- <cover-image src="https://kkkksslls.oss-cn-beijing.aliyuncs.com/exe/shoucang.png" mode="widthFix" class="video_play_icon"></cover-image> -->
+        <cover-view class="video_bg_black">
+          <cover-view class="video_cover_txt">
+            <cover-view>
+              <cover-view class="video_txt">{{item.courseName}}{{item.course_name}}</cover-view>
+              <cover-view class="shu" style="width: 100vw;">
+              <cover-view class="course-box">
+             <cover-view class="a">{{item.time}}</cover-view> 
+             <cover-view class="b">分钟</cover-view>
+               </cover-view>
+                <cover-view class="course-box">
+             <cover-view class="a">{{item.fatBurning}}{{item.fat_burning}}</cover-view> 
+             <cover-view class="b">千卡</cover-view>
+               </cover-view>
+                <cover-view class="course-box">
+             <cover-view class="a">{{item.difficulty}}</cover-view> 
+             <cover-view class="b">难度</cover-view>
+               </cover-view>
+              </cover-view>
+            </cover-view>
+          </cover-view>
+        </cover-view>
+      </cover-view>
+</video>
+<!--课程详情-->
+<view class="cardd">
+<view class="row course">
+<image class="course-img" src="https://kkkksslls.oss-cn-beijing.aliyuncs.com/exe/jibenxinxi.png"></image>
+<view class="course-teacher">{{item.teacherName}}{{item.teacher_name}}</view>
+<view class="right">关注</view>
+</view>
+<view class="row">
+<view class="course-type">{{item.type}}</view>
+<view class="course-type">{{item.local}}</view>
+</view>
+<view class="course-des">{{item.teacherDescription}}{{item.teacher_description}}</view>
+
+<!--按钮-->
+<view class="roww">
+<view class="course-boxx">
+<image class="course-boxx-img" src="https://kkkksslls.oss-cn-beijing.aliyuncs.com/exe/xihuan-lan.png"></image>
+<view>喜欢</view>
+</view>
+
+<view class="course-boxx">
+<image class="course-boxx-img" src="https://kkkksslls.oss-cn-beijing.aliyuncs.com/exe/xiazai.png"></image>
+<view>下载</view>
+</view>
+
+<view class="course-boxx">
+<image class="course-boxx-img" src="https://kkkksslls.oss-cn-beijing.aliyuncs.com/exe/fenxiang.png"></image>
+<view>分享</view>
+</view>
+</view>
+</view>

@@ -1,0 +1,83 @@
+map{
+  width: 100%;
+  height:1500rpx;
+}
+.mp{
+  margin-top: 300rpx;
+}
+page {
+  width: 100%;
+  height: 100%;
+  color: rgb(255, 255, 255);
+  background-color: #fff;
+}
+
+.circle-box{
+  width: 250rpx;
+  height: 250rpx;
+  display: flex;
+  flex-wrap: wrap;
+  position: fixed;
+  bottom: 550rpx;
+  left:34%;  
+  background-image: linear-gradient(-45deg, #f59453 0%, #f9f297 100%);
+
+  color: rgb(255, 244, 244);
+  border-radius: 100%;
+
+}
+.circle-box:active{
+  box-shadow: -15rpx 0 10rpx -1rpx rgb(225, 201, 105),0 -15rpx 15rpx -1rpx rgb(225, 201, 105), 0 20rpx 15rpx -1rpx rgb(225, 201, 105), 15rpx 0 25rpx -1rpx rgb(225, 201, 105);
+
+}
+.draw_btn {
+  width: 150rpx;
+  position: absolute;
+ bottom: 60rpx;
+  right: 0;
+  left: 38rpx;
+  margin: auto;
+  font-weight: 900;
+  font-size: 38rpx;
+  border-radius: 10rpx;
+  opacity: 1;
+}
+.box-image{
+  width: 100rpx;
+  height: 100rpx;
+  margin-left: 70rpx;
+  padding-top: 30rpx;
+}
+.shezhi{
+  border-radius: 1000rpx;
+  background-color: rgb(255, 255, 255);
+  width: 120rpx;
+  height: 120rpx;
+  position: absolute;
+  bottom: 600rpx;
+  left: 570rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.jilu{
+  border-radius: 1000rpx;
+  background-color: rgb(255, 255, 255);
+  width: 120rpx;
+  height: 120rpx;
+  position: absolute;
+  bottom: 600rpx;
+  left: 70rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.shezhi-image{
+  width: 60rpx;
+  height: 60rpx;
+}
+.jilu-image{
+  width: 60rpx;
+  height: 60rpx; 
+  
+}

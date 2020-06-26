@@ -1,0 +1,423 @@
+.top_container
+{
+  height: 320rpx;
+  width: 100%;
+  border-bottom: 1px solid #bfbfbf50;
+}
+.pd
+{
+  padding: 0 30rpx;
+}
+.grey
+{
+  color: #bfbfbf;
+}
+.small_icon
+{
+  height: 40rpx;
+  width: 40rpx;
+}
+.flex
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top_message
+{
+  display: flex;
+  align-items: center;
+  height: 190rpx;
+  padding-top: 20rpx; 
+}
+.top_message_logo
+{
+  height: 140rpx;
+  width: 140rpx;
+  border-radius: 1000rpx;
+}
+.top_message_name
+{
+  font-size: 36rpx;
+  padding-left: 40rpx;
+}
+.top_message_right
+{
+  height: 32rpx;
+  width: 32rpx;
+  margin-left: 8rpx;
+  margin-top: 12rpx;
+}
+.top_message_rights
+{
+  height: 32rpx;
+  width: 32rpx;
+  margin-left: 8rpx;
+  margin-top: -5rpx;
+}
+.top_message_rightss
+{
+  height: 32rpx;
+  width: 32rpx;
+  margin-left: 8rpx;
+  margin-top: -10rpx;
+}
+._right
+{
+float: right;
+}
+
+.focus_message
+{
+  display: flex;
+  justify-content: space-around;
+}
+.focus_message_item
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.focus_message_item a
+{
+  font-weight: 500;
+}
+.focus_message_item text
+{
+  font-size: 20rpx;
+}
+
+.myClass_message
+{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 180rpx;
+}
+.tspx
+{
+  font-size: 26rpx;
+  margin-left: 20rpx;
+}
+
+.member_message
+{
+  position: absolute;
+  top: -20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 80rpx;
+  width: 640rpx;
+  margin: 0 40rpx;
+  border-radius: 10rpx;
+  padding-left:20rpx; 
+  background: #ebe6da;
+  background: -moz-linear-gradient(left, #ebe6da 0%, #ebb325 100%);
+  background: -webkit-linear-gradient(left, #ebe6da 0%, #ebb325 100%);
+  background: linear-gradient(to right, #ebe6da 0%, #ebb325 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebe6da', endColorstr='#ebb325',GradientType=1 );
+                                
+}
+.member_message image
+{
+  height: 30rpx;
+}
+.member_message text
+{
+  font-size: 25rpx;
+  margin-left: 25rpx;
+}
+.member_btn
+{
+  text-align: center;
+  color: #ebb325;
+  font-size: 30rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  width: 140rpx;
+  background-color: #000;
+  border-radius: 40rpx;
+}
+.denglu{
+  color: #bfbfbf;
+  font-size: 32rpx;
+  margin-left: 200rpx;
+}
+.ti{
+  width: 60rpx;
+  height: 60rpx;
+  margin-bottom: -13rpx;
+  margin-right: 10rpx;
+}
+.card
+{
+  height: 220rpx;
+  margin: 0 40rpx;
+  margin-bottom: 20rpx;
+  padding: 40rpx;
+  background-color: #fff;
+  border-radius: 10rpx; 
+}
+
+.card_small
+{
+  height: 60rpx;
+  margin-top:20rpx;
+  margin: 0 40rpx;
+  margin-bottom: 20rpx;
+  padding: 20rpx 40rpx;
+  background-color: #fff;
+  border-radius: 10rpx; 
+}
+
+.background_grey
+{
+  position: relative;
+  padding:100rpx 0;
+  background-color: #eee;
+  height: 90vh;
+  width: 100%;
+}
+
+.my_sport_data_title
+{
+  font-size: 32rpx;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50rpx;
+}
+._data_number_title
+{
+  font-size: 28rpx;
+}
+.small_font
+{
+  font-size: 24rpx;
+  color: #999;
+  margin-left: 20rpx;
+}
+.alltime
+{
+  font-size: 50rpx;
+  font-weight: 500;
+}
+.stwte{
+
+margin-left: 100rpx;
+font-size: 32rpx;
+color: rgb(178, 178, 179);
+}
+
+
+.card-tt{
+  width: 600rpx;
+  height: 70%;
+  margin-left: -30rpx;
+}
+.fen-1-5 {
+
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 70%;
+  margin-top: 50rpx;
+
+
+}
+.fen-1-5-ve1 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 33.3%;
+  height: 100%;
+
+}
+
+.fen-1-5-ve2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 33.3%;
+  margin-left: 90rpx;
+  height: 100%;
+
+}
+
+.fen-1-5-ve3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 33.3%;
+  height: 100%;
+  margin-left: 90rpx;
+  
+}
+
+.fen-1-5-ve1-1 {
+  height: 40rpx;
+  width: 40rpx;
+  text-align: center;
+  align-items: center;
+}
+
+.fen-1-5-ve1-2 {
+  height: 15%;
+  width: 100%;
+
+  text-align: center;
+  align-items: center;
+}
+.fen-1-5-ve1-2-text{
+  color: black;
+  font-size: 32rpx;
+  font-weight: 600;
+  padding-top: 40rpx;
+}
+.fen-1-5-ve1-3 {
+  height: 60%;
+  width: 100%;
+  margin-top: 20rpx;
+
+  text-align: center;
+  align-items: center;
+}
+.fen-1-5-ve1-3-text{
+  font-size: 24rpx;
+  color: black;
+}
+.fen-1-5-ve2-1 {
+  height: 40rpx;
+  width: 40rpx;
+  text-align: center;
+  align-items: center;
+}
+
+.fen-1-5-ve2-2 {
+  height: 15%;
+  width: 100%;
+
+  text-align: center;
+  align-items: center;
+}
+.fen-1-5-ve2-2-text{
+  color: black;
+  font-size: 32rpx;
+  font-weight: 600;
+}
+
+.fen-1-5-ve2-3 {
+  height: 60%;
+  width: 100%;
+  margin-top: 20rpx;
+  text-align: center;
+  align-items: center;
+}
+.fen-1-5-ve2-3-text{
+  font-size: 24rpx;
+  color: black;
+}
+
+.fen-1-5-ve3-1 {
+  height: 40rpx;
+  width: 40rpx;
+  text-align: center;
+  align-items: center;
+}
+
+.fen-1-5-ve3-2 {
+  height: 15%;
+  width: 100%;
+
+  text-align: center;
+  align-items: center;
+}
+.fen-1-5-ve3-2-text{
+  color:black;
+  font-size: 32rpx;
+  font-weight: 600;
+}
+.fen-1-5-ve3-3 {
+  height: 60%;
+  width: 100%;
+  margin-top: 20rpx;
+  text-align: center;
+  align-items: center;
+}
+.fen-1-5-ve3-3-text{
+  font-size: 24rpx;
+  color: black;
+}
+
+.type-text{
+  width: 500rpx;
+  height: 10%;
+}
+.view-icon{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 1000rpx;
+  z-index: 999;
+  background-color: darkgoldenrod;
+}
+.icon{
+  width: 50rpx;
+  height: 50rpx;
+  z-index: 999;
+}
+.jiji{
+  width: 92%;
+  height: 500rpx;
+  margin-top: 150rpx;
+  margin-left: 32rpx;
+}
+.cards{
+  width: 1000rpx;
+  height: 218rpx;
+  margin-left: 30rpx;
+  margin-top: 70rpx;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 8rpx;
+  flex-wrap: wrap;
+  z-index: 99;
+  position: relative;
+  top: -120rpx;
+
+}
+.apply-img{
+  height: 200rpx;
+  width: 300rpx;
+  z-index: 9;
+
+}
+.apply-img {
+
+  margin: 0 auto;
+  width: 100%;
+  height: 470rpx;
+
+}
+.time-text{
+  width: 500rpx;
+  height: 10%;
+  font-size: 24rpx;
+  margin-left: 45rpx;
+  margin-top: -10rpx;
+}
+.type-text{
+
+  font-size: 24rpx;
+}
+.card-image{
+  width: 30%;
+  height: 100%;
+  z-index: 0;
+  display:block;
+}
+.io{
+  width: 300rpx;
+  position: absolute;
+  bottom: 228rpx;
+  left: 240rpx;
+}

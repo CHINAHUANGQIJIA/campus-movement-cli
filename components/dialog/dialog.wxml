@@ -1,0 +1,78 @@
+<view class="my-dialog" hidden="{{!showDialogname}}">
+	<view class="my-mask"></view>
+	<view class="my-container">
+		<view class="title">{{title}}</view>
+		<view class="contents">
+			<input bindinput="Text" class="info-inputs" placeholder="请输入修改内容" maxlength="10" type="text" />
+			<view class="row" wx:for="{{content}}" wx:for-index="index" wx:for-item="item" wx:key="index">{{item.label}}：{{item.value}}</view>
+		</view>
+		<view class="btn-row">
+			<view class="confirm" bindtap="_confirmname">修改</view>
+			<view class="cancel" bindtap='_cancel'>取消</view>
+		</view>
+	</view>
+</view>
+
+
+
+<view class="my-dialog" hidden="{{!showDialog}}">
+	<view class="my-mask"></view>
+	<view class="my-container">
+		<view class="title">{{title}}</view>
+		<view class="content">
+		   <textarea class="contens" placeholder="请输入修改内容" bindinput="Text" maxlength="140"  value="{{content}}"  />
+		
+			<view class="row" wx:for="{{content}}" wx:for-index="index" wx:for-item="item" wx:key="index">{{item.label}}：{{item.value}}</view>
+			<view class="ti"> 
+			 <image class="imagede" bindtap="Texts"  src="../../image/info/san.png"></image>
+			 	<view class="text-count">{{contentLength}}/140</view>
+				 </view>
+		</view>
+		<view class="btn-row">
+			<view class="confirm" bindtap="_confirm">修改</view>
+			<view class="cancel" bindtap='_cancel'>取消</view>
+		</view>
+	</view>
+</view>
+
+<view class="my-dialog" hidden="{{!showDialogsex}}">
+	<view class="my-mask"></view>
+	<view class="my-container">
+		<view class="title">{{title}}</view>
+		<view class="contents">
+			<view class="section">
+				<picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+					<view class="picker"> 当前选择：{{array[index]}} </view>
+				</picker>
+			</view>
+			<view class="row" wx:for="{{content}}" wx:for-index="index" wx:for-item="item" wx:key="index">{{item.label}}：{{item.value}}</view>
+		</view>
+		<view class="btn-row">
+			<view class="confirm" bindtap="_confirmsex">修改</view>
+			<view class="cancel" bindtap='_cancel'>取消</view>
+		</view>
+	</view>
+</view>
+
+
+<view class="my-dialog" hidden="{{!showDialogadd}}">
+	<view class="my-mask"></view>
+	<view class="my-container">
+		<view class="title">{{title}}</view>
+		<view class="contents">
+			<view class="section">
+			 <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+   <view class="picker">
+     {{region[0]}}，{{region[1]}}，{{region[2]}}
+   </view>
+ </picker>
+
+			</view>
+			<view class="row" wx:for="{{content}}" wx:for-index="index" wx:for-item="item" wx:key="index">{{item.label}}：{{item.value}}</view>
+		</view>
+		<view class="btn-row">
+			<view class="confirm" bindtap="_confirmadd">修改</view>
+			<view class="cancel" bindtap='_cancel'>取消</view>
+		</view>
+	</view>
+</view>

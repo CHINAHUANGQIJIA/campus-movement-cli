@@ -1,0 +1,20 @@
+.circle_box,.circle_draw{ position: relative;
+}
+.circle_bg{position: absolute;}
+.circle_box{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.circle_txt{
+  position: absolute;
+  padding: 80rpx;
+  /* font-size: 50rpx; */
+  color: rgb(7, 7, 7);
+}
+.cir-target{
+  font-size: 100rpx;
+  
+}

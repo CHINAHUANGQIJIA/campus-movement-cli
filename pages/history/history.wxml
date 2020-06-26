@@ -1,0 +1,29 @@
+<view class="history-container">
+<image class="history-container-img" src="https://jojoho.oss-cn-beijing.aliyuncs.com/dan-gold-tIHb8sIvWPk-unsplash.jpg"></image>
+<view class="history-container-text">
+<view class="history-a">
+<image class="history-container-text-img" src="https://kkkksslls.oss-cn-beijing.aliyuncs.com/exe/shijian.png"></image>
+</view>
+<view class="history-b">
+<view class="history-container-title">我看过的课程</view>
+<view>{{getSearch.length}}个课程</view>
+</view>
+</view>
+</view>
+
+<!--列表-->
+<view class="containerr">
+<view class="history-box" wx:for="{{getSearch}}" bindtap="onvideoz" data-item="{{item}}">
+<view class="history-box-a">
+<image class="history-box-a-img" src="{{item.avatar}}"></image>
+</view>
+<view class="history-box-b">
+<view class="history-box-title">
+{{item.course_name}}
+</view>
+<view class="history-box-txt">
+{{item.difficulty}}·{{item.time}}分钟·{{item.fat_burning}}千卡
+</view>
+</view>
+</view>
+</view>

@@ -1,0 +1,158 @@
+/* 整体 */
+.row{
+  display: flex;
+}
+.aa{
+  /* background-image: linear-gradient(to bottom, #6AAFE6,rgb(180, 235, 255)); */
+  background-image: url("https://jojoho.oss-cn-beijing.aliyuncs.com/images/2020-06-24/1592960234192109.png");
+  background-size: 100%;
+}
+.container{
+
+  /* line-height: 300rpx; */
+  padding: 0;
+  height: 400rpx;
+ 
+}
+
+/* 个人信息展示 */
+.open-data-userAvatarUrl{
+  width: 120rpx;
+  height: 120rpx;
+  display: block;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 11rpx;
+  margin-top: 70rpx;
+
+}
+.open-data-userNickname{
+  color: white;
+  margin-bottom: 20rpx;
+}
+.exe-box{
+  height: 150rpx;
+  text-align: center;
+  width: 33.33%;
+  border-bottom: 10rpx solid #eeeeee;
+  
+}
+.exe-box-txt-1{
+  line-height: 90rpx;
+  height: 90rpx;
+  color: white;
+  font-size: 30rpx;
+  letter-spacing:2rpx
+}
+.exe-box-txt-2{
+  line-height: 60rpx;
+  height: 60rpx;
+  color: white;
+  font-size: 30rpx;
+  letter-spacing:2rpx
+}
+
+/* 日历*/
+.toggle{
+  text-align: right;
+  height: 70rpx;
+  line-height: 70rpx;
+  width: 100%;
+}
+.toggle-img{
+  height: 70rpx;
+  width: 70rpx;
+  margin-right: 40rpx;
+  margin-top: 20rpx;
+}
+.togglee{
+  height: 70rpx;
+  line-height: 70rpx;
+ width: 100%;
+ margin: 0 auto;
+ text-align: center;
+}
+
+/*每日运动记录*/
+.sousuo-box{
+  border-radius: 20rpx;
+  margin-bottom: 100rpx;
+
+}
+.arr-card{
+  border-radius: 6rpx;
+  margin: 40rpx;
+
+  background: rgb(255, 92, 81);
+  color: white;
+}
+.arr-row{
+  display: flex;
+  padding: 10rpx 20rpx;
+  font-size: 32rpx;
+}
+.arr-left{
+        width: 60%;
+        text-align: left;
+        font-size: 32rpx;
+}
+.arr-right{
+  text-align: right;
+        width: 40%;
+        font-size: 32rpx;
+      
+}
+.arr-right-img{
+  height: 35rpx;
+  width: 35rpx;
+}
+.km{
+  font-size: 35rpx;
+  font-weight: 500;
+}
+.arr-box{
+  margin: 10rpx;
+}
+.wu-box{
+  
+  color: gray;
+  font-size: 32rpx;
+  text-align: center;
+  font-weight: 500;
+  padding: 40rpx 0rpx;
+  border-bottom: 1rpx solid rgb(208, 204, 204);
+}
+/* 统计*/
+.step-num{
+  width: 90%;
+  margin: 0 auto;
+  color: white;
+  background: rgb(255, 92, 81);
+  margin-bottom: 60rpx;
+  border-radius: 6rpx;
+  margin-top: -60rpx;
+}
+.step-title{
+  color: rgb(255, 255, 255);
+  font-size: 35rpx;
+  font-weight: 400;
+  margin-left: 20rpx;
+  margin-top: 40rpx;
+}
+.step-num-txt{
+  width: 35%;
+  color: rgb(255, 255, 255);
+}
+.progress-box{
+  width: 50%;
+  padding-top: 10rpx;
+}
+.progress-num{
+  width: 15%;
+  color: rgb(255, 255, 255);
+  margin-left: 20rpx;
+}
+.step-card{
+  padding: 20rpx;
+  font-size: 34rpx;
+}

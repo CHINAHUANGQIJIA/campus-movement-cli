@@ -1,0 +1,19 @@
+/* pages/news/news.wxss */
+.view{
+margin: 50rpx;
+}
+.im{
+  width: 100%;
+  margin: 0 auto;
+}
+.itemtext{
+font-size: 36rpx;
+color: rgb(137, 138, 138);
+}
+.time{
+font-size: 30rpx;
+color: rgb(189, 191, 191);
+margin-top: 20rpx;
+margin-left: 320rpx;
+width: 360rpx;
+}

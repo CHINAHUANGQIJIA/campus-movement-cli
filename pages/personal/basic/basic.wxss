@@ -1,0 +1,119 @@
+page {
+  background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(240, 240, 240));
+  background-attachment: fixed;
+}
+
+.avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 330rpx;
+
+}
+
+.avatar image {
+  width: 220rpx;
+  height: 220rpx;
+  box-shadow: 0 0 0 2rpx rgb(174, 194, 201);
+  border-radius: 1000rpx;
+}
+
+.cells {
+  margin-top: 20rpx;
+  
+}
+
+.cells .item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 40rpx 30rpx;
+  border-bottom: 1rpx solid #dbdada;
+  background-color: #fff;
+  margin-left: 20rpx;
+  color: #ccc;
+  margin-right: 20rpx;
+  font-size: 30rpx;
+
+  
+}
+.rights{
+ width: 657.5rpx;
+ height: 300rpx;
+ margin-left: 20rpx;
+ background-color: #fff;
+ position: absolute;
+text-overflow:ellipsis;
+word-wrap:break-word;
+border-bottom: 1rpx solid #dbdada;
+padding-right: 30rpx;
+padding-bottom: 30rpx;
+padding-left:30rpx ;
+font-size: 30rpx;
+}
+.items {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+  padding: 20rpx 30rpx;
+  border-bottom: 1rpx solid #dbdada;
+  background-color: #fff;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  font-size: 30rpx;
+  
+}
+
+.cells .item::after {
+  content: '';
+  display: inline-block;
+  height: 10rpx;
+  width: 10rpx;
+  border: 0 solid #ccc;
+  border-width: 3rpx 3rpx 0 0;
+
+  margin-right: 20rpx;
+  transform: matrix(1, 1, -1, 1, 0, 0);
+}
+.items::after {
+  content: '';
+  display: inline-block;
+  height: 10rpx;
+  width: 10rpx;
+  border: 0 solid #ccc;
+  border-width: 3rpx 3rpx 0 0;
+
+  margin-right: 20rpx;
+  transform: matrix(1, 1, -1, 1, 0, 0);
+}
+
+.cells .item .right {
+  position: absolute;
+  right: 100rpx;
+}
+
+.avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 330rpx;
+
+}
+
+.cells {
+  margin-top: 20rpx;
+  
+}
+
+
+.cells .item .right {
+  position: absolute;
+  right: 100rpx;
+}
+
+

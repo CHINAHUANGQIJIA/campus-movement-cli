@@ -1,0 +1,123 @@
+/*时间轴*/
+.weui-cell-third{
+  background: #fff;
+  margin-bottom: 220rpx;
+  
+}
+.weui-cell-list{
+  background: #fff;
+  margin: 0px 20px 0px 20px;
+}
+.weui-cell-line{
+/* width: 100px; */
+margin-left: 5px;
+  border-left: 1px solid #ddd;
+  margin-right: 20rpx;
+  height: 150px; 
+  background: #fff;
+}
+.card{
+  width: 600rpx;
+  margin-left: 50rpx;
+}
+/*小圆环*/
+.weui-cell-circle{
+  border: 1px solid white;
+  border-radius: 5px;
+  width: 10px;
+  height: 10px;
+  background-image: linear-gradient(-45deg, #fff131 0%, #f542ad 100%);
+}
+.weui-cell-time{
+  /* width: 50px; */
+
+  font-size:14px;
+  color: rgb(146, 143, 143);
+  
+
+ 
+}
+.weui-box{
+  display: flex;
+  margin-top: 20rpx;
+  width: 600rpx;
+
+  margin-left: -15rpx;
+}
+.box-a{
+  width: 50%;
+  margin-left: 5px;
+}
+.box-b{
+  width: 70%;
+  padding: 10px;
+
+  height: 130rpx;
+}
+.weui-img{
+  height: 200rpx;
+  width: 100%;
+  border-radius: 2px;
+  margin-top: 10rpx;
+}
+.weui-cell-name{
+  font-weight: 600;
+  font-size: 30rpx;
+  color: rgb(112, 110, 110);
+ height: 76rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+
+
+}
+.weui-cell-event{
+  text-align: right ;
+  font-size: 26rpx;
+  color: gray;
+  margin-top: 20rpx;
+}
+/*轮播图*/
+.swiper {
+  height: 400rpx;
+  width: 100%;
+}
+.swiper image {
+  height: 100%;
+  width: 100%;
+}
+
+/*标题背景*/
+.swipertitle{
+  position: absolute;
+  bottom:100rpx;
+  left: 10%;
+  right: 10%;
+  font-size: 32rpx;
+  color: white;
+  background-color: rgba(34, 34, 32, 0.308);
+  border-radius: 10px;
+  padding: 10px;
+}
+.weui-txt{
+  font-size: 40rpx;
+  font-weight: 600;
+  margin: 20rpx;
+  width: 200rpx;
+  background-image: linear-gradient(-45deg, #fff131 0%, #f542ad 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  border-radius: 10rpx;
+}
+.weui-end{
+  height: 50rpx;
+  text-align: right;
+  margin-top: -50rpx;
+}
+.weui-end-img{
+  height: 40rpx;
+  width: 40rpx;
+  margin-right: 30rpx;
+}

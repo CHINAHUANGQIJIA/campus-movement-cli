@@ -1,0 +1,77 @@
+<!--pages/mail_list/mail_info/mail_info.wxml-->
+ <view>
+  <!--这个按钮来触发弹窗的打开-->
+  <dialog id="dialog"
+      title="基本信息修改"
+      confirmText="确定"
+      cancelText="取消"
+      content="{{dialogContent}}"
+      bind:cancel="handleCancelDialog"
+       bind:confirmname="handleConfirmDialogname"
+      bind:confirmsex="handleConfirmDialogsex"
+      bind:confirmadd="handleConfirmDialogadd"
+      bind:confirm="handleConfirmDialog"
+      >
+
+   </dialog>
+</view>
+<navigator bindtap="fan" class="mail-info-back">
+<image src="https://jojoho.oss-cn-beijing.aliyuncs.com/images/2020-06-25/15930721458409.png" style="width:50rpx;height:50rpx;" />
+</navigator>
+<image class="mail-info-bg" src="https://jojoho.oss-cn-beijing.aliyuncs.com/images/2020-06-24/159296294498162.png"></image>
+<view class="mail-info">
+
+<view class="mail-info-tap">
+<image class="mail-info-avatar" src='{{infos.avatar}}'  mode="aspecFill" bindtap="headimage"></image>
+<!-- <text>{{mail[0].remark}}</text> -->
+<view class="mail-info-title" bindtap="submitDataname">{{infos.userName}}
+<image bindtap="changeBeizhu" class="mail-info-tap-beizhu" src="/image/icon/icon_beizhu (2).png" />
+
+</view>
+
+<picker mode="region" class="mail-info-tap-text" bindchange="bindRegionChange">{{infos.address}}</picker>
+</view>
+
+</view>
+<view class="cells">
+  <view class="cells-item">
+          <image  class="iconn1" src="https://jojoho.oss-cn-beijing.aliyuncs.com/images/2020-06-25/159307276461357.png"></image>
+  <navigator   class="item">
+
+    <text>账号</text>
+    <text class="right">{{infos.userAccount}}</text>
+  </navigator>
+  
+  </view>
+
+<view class="cells-item">
+      <image class="iconn2" src="https://jojoho.oss-cn-beijing.aliyuncs.com/images/2020-06-25/159307278809154.png"></image>
+  <picker bindchange="bindPickerChange" class="item" value="{{index}}" range="{{array}}">
+
+    <text>性别</text>
+    <text class="right">{{infos.gender}}</text>
+  </picker>
+
+</view>
+
+
+<view class="cells-item">
+        <image  class="iconn3" src="https://jojoho.oss-cn-beijing.aliyuncs.com/images/2020-06-25/159307281455746.png">
+</image>
+    <navigator bindtap="submitDataqian" class="items" style="border-bottom: 0rpx solid #dbdada;">
+
+    <text class="ge">个性签名</text>
+   
+  </navigator>
+</view> 
+  </view>
+   <text class="rights">{{infos.signature}}</text>
+<view class="mail-info-btn">
+<button class="bb" style="margin:20rpx;width:60%;height:50%;" bindtap="fan">返回</button>
+<button class="bbs" style="margin:20rpx;width:60%;height:50%; " wx:if="{{!isDel}}" bindtap="zhuxiao">注销账户</button>
+</view>
+
+
+<view class="mail-info-place-down">
+<image class="mail-info-place" src="/image/icon/icon_dingwei.png"></image>
+</view>

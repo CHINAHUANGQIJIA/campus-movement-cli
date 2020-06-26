@@ -1,0 +1,51 @@
+
+<!--pages/login/login.wxml-->
+<view class="login-container">
+	<!-- 登录页背景 -->
+	<view>
+
+	</view>
+
+	<view class="login-view">
+		<!-- 手机号登录输入框 -->
+		<login-input phoneTab="{{phoneTab}}"  wx:if="{{phoneTab}}" bindmyrename="bindrename"   bindmyrepasswords="bindrepasswords" bindmyrepassword="bindrepassword" bindmyevent="bindInputData"/>
+		<!-- 用户名登陆输入框 -->
+		<view class="login-margin" wx:if="{{!phoneTab}}">
+			<image class="login-image" src="https://jojoho.oss-cn-beijing.aliyuncs.com/images/2020-06-24/1592983632778141.png" />
+						<input bindinput="usernameInput" class="login-input" maxlength="11" placeholder="请输入11位数字账号" placeholder-class="phcolor" type="number" auto-focus="true" />
+	
+			<view class="login-line"></view>
+		</view>
+
+		<!-- 密码输入框 -->
+		<view class="login-margin" wx:if="{{!phoneTab}}">
+			<image class="login-image" src="https://jojoho.oss-cn-beijing.aliyuncs.com/images/2020-06-24/159298383761592.png" />
+			<input bindinput="passwordInput" class="login-input" type="password" maxlength="6" placeholder="请输入六位密码" placeholder-class="phcolor" />
+
+			<view class="login-line"></view>
+		</view>
+
+		<!-- 切换按钮 -->
+		<view class="login-change-btn">
+			<view class="login-change" bindtap="changeLogin">{{phoneTab ? '账号密码登录' : '新用户注册'}}</view>
+			<view class="login-change">|</view>
+			<view class="login-change">微信一键登录</view>
+		</view>
+
+		<!--登录按钮-->
+		<view class="login-btn-view" wx:if="{{!register}}">
+			<button style="border-radius: 30px;background-color: rgb(59, 170, 239);color:white;width:60vw;position: absolute;left:70rpx;margin-top:30rpx;" form-type="submit" bindtap="login">确认登录</button>
+		</view>
+
+				<!--登录按钮-->
+		<view class="login-btn-view" wx:if="{{register}}">
+			<button style="border-radius: 30px;background-color: rgb(59, 170, 239);color:white;width:60vw;position: absolute;left:70rpx;margin-top:30rpx;" form-type="submit" bindtap="register">确认注册</button>
+		</view>
+
+		<!-- 忘记密码 -->
+		<view class="login-forget" bindtap="missPassword">
+			忘记密码?点这里
+		</view>
+<image class="timage" src="https://jojoho.oss-cn-beijing.aliyuncs.com/images/2020-06-24/159298288329997.png"></image>
+	</view>
+</view>

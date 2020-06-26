@@ -1,0 +1,60 @@
+/* pages/index/index.wxss */
+.container {
+margin-top: -200rpx;
+height:100%;
+width: 100%;
+}
+.scale-value{
+  text-align: center;
+  color: black;
+  font-weight: 500;
+}
+.scale-values{
+  margin-top: 405rpx;
+  position: absolute;
+
+  left: 40rpx;
+  color: black;
+  font-weight: 500;
+}
+.scale-title{
+  margin-top: 60rpx;
+  margin-left: -500rpx;
+
+  font-size: 32rpx;
+  color: rgb(184, 184, 184);
+  font-weight: 600;
+}
+.scale-container{
+  display: flex;
+}
+.scale-container .scale-value{
+  flex: 1;
+  line-height: 600rpx;
+}
+.scale-view{
+  width: 500rpx;
+  height: 750rpx;
+  flex: 1;
+  margin-left: 350rpx;
+  margin-top: 50rpx;
+}
+.scale-views{
+  width: 680rpx;
+  height: 200rpx;
+  flex: 1;
+}
+.btn{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 1000rpx;
+  text-align: center;
+  margin-top: 10rpx;
+  position: absolute;
+
+  left: 550rpx;
+  line-height: 140rpx;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  background-color: rgb(255, 215, 83);
+}

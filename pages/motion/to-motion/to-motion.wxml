@@ -1,0 +1,21 @@
+<!--pages/motion/to-motion/to-motion.wxml-->
+<tabbar selected="{{3}}"></tabbar>
+<view class="pages">
+  <map id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="18" polyline="{{polyline}}"show-location controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location>
+  </map>
+</view>
+
+  <view class="circle-box" wx:if="{{!state}}" bindtap="startRun">
+  <image class="box-image" src="../../../image/paobu.png"></image>
+   <view class="draw_btn"  style="z-index: 999;">户外跑</view>
+<!-- <button bindtap="record">运动记录</button> -->
+</view>
+ <view class="shezhi">
+ <image class="shezhi-image" src="../../../image/shezhi.png" bindtap="openSetting"></image>
+ </view>
+  <view class="jilu">
+   <image class="jilu-image" src="../../../image/jilu.png" bindtap="record"></image>
+  </view>
+
+
+

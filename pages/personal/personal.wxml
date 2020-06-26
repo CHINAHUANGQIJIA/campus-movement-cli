@@ -1,0 +1,138 @@
+
+<tabbar selected="{{4}}"></tabbar>
+<view class='user_container'>
+  <view class='top_container'>
+    <view class='top_message pd'>
+		<block wx:if="{{infos==''}}">
+
+			<image class="top_message_logo" src="https://jojoho.oss-cn-beijing.aliyuncs.com/images/2020-06-08/159159923324653.png" bindtap="getlogin"></image>
+				<text class="top_message_name" bindtap="getlogin">请点击登录</text>
+
+</block>
+		<block wx:else>
+
+			<view  bindtap="jixin"><image class="top_message_logo" src="{{infos.avatar}}" mode="aspecFill"></image></view>
+				<view bindtap="jixin" class="top_message_name">{{infos.userName}}</view>
+  
+    </block>
+        <view  class="_right"><image class='top_message_right' src='/pulic/icon/right.png'></image></view>
+      </view>
+      <view class='focus_message pd' wx:if="{{!infos==''}}">
+        <view class='focus_message_item'>
+          <a>{{onepost}}</a>
+          <text class='grey'>今日步数</text>
+        </view>
+        <view class='focus_message_item'>
+          <a>{{infos.goStepNumber}}</a>
+          <text class='grey'>总运动步数</text>
+        </view>
+        <view class='focus_message_item'>
+          <a>{{infos.goStepTime}}</a>
+          <text class='grey'>总运动时间</text>
+        </view>
+        <view class='focus_message_item'>
+          <a>{{length}}</a>
+          <text class='grey'>打卡次数</text>
+        </view>
+      </view>
+     <view wx:else class="denglu">
+     <image class="ti" src="https://jojoho.oss-cn-beijing.aliyuncs.com/images/2020-06-22/159283850929036.png"></image>
+     <text>请先登录，才可以显示信息哦</text></view>
+  </view>
+  <view class='myClass_message pd'>
+    <view  bindtap="jixin"><image class='small_icon' src='/pulic/icon/my_class.png'></image><text class='tspx'>基本信息</text></view>
+    <view bindtap="daka"><image class='small_icon' src='/pulic/icon/my_calendar.png'></image><text class='tspx'>每日打卡</text></view>
+    <view bindtap="jilu"><image class='small_icon' src='/pulic/icon/my_watcher.png'></image><text class='tspx'>运动记录</text></view>
+  </view>
+  <view class='background_grey'>
+    <view class='member_message '>
+    <view>
+      <image class='small_icon' src='/pulic/icon/diamond.png'></image>
+      <text>钻石快速去运动卡！</text>
+    </view>
+    <view bindtap="dondon" class='member_btn'>立即运动</view>
+  </view>
+    <view class='my_sport_data card' bindtap="yundong">
+        <view class='my_sport_data_title' ><text>最近一次运动</text>
+        <view bindtap="jilu">
+        <image class='top_message_rights' src='/pulic/icon/right.png' ></image>
+        </view>
+        </view>
+        <view class="flex"  wx:if="{{!infos=='' && lenlen>0}}">
+         
+         <view class="cards">
+   <view class="card-tt">
+ 
+  <view class="fen-1-5">
+<view class="fen-1-5-ve1">
+<image class="fen-1-5-ve1-1" src="https://jojoho.oss-cn-beijing.aliyuncs.com/images/2020-06-16/159229871778415.png">
+
+</image>
+<view class="fen-1-5-ve1-2">
+<text class="fen-1-5-ve1-2-text">{{ record.sportAverageSpeed}} m/s</text>
+</view>
+<view class="fen-1-5-ve1-3">
+<text class="fen-1-5-ve1-3-text">均速</text>
+</view>
+</view>
+<view class="fen-1-5-ve2">
+<image class="fen-1-5-ve2-1" src="https://jojoho.oss-cn-beijing.aliyuncs.com/images/2020-06-16/159229861529764.png">
+
+</image>
+<view class="fen-1-5-ve2-2">
+<text class="fen-1-5-ve2-2-text">{{ record.sportTime}}</text>
+</view>
+<view class="fen-1-5-ve2-3">
+<text class="fen-1-5-ve2-3-text">用时</text>
+</view>
+</view>
+<view class="fen-1-5-ve3">
+<image class="fen-1-5-ve3-1" src="https://jojoho.oss-cn-beijing.aliyuncs.com/images/2020-06-16/1592298675231105.png">
+</image>
+<view class="fen-1-5-ve3-2">
+<text class="fen-1-5-ve3-2-text">{{ record.sportDistance}} km</text>
+</view>
+<view class="fen-1-5-ve3-3">
+<text class="fen-1-5-ve3-3-text">里程</text>
+</view>
+</view>
+</view>
+<view class="io">         <text class="time-text">{{record.gmtCreate}}</text>
+    </view>
+</view>
+</view> 
+        </view>
+        <view wx:else><text class="stwte">很抱歉，您还没有运动数据哦！</text></view>
+      </view>
+
+      <view class='my_body_data card' bindtap="shenti">
+        <view class='my_sport_data_title'><text>我的身体数据</text><navigator > <image class='top_message_rightss' src='/pulic/icon/right.png'></image></navigator> </view>
+        <view class='flex'  wx:if="{{!infos==''}}">
+          <view><text class="alltime">{{infos.height}}</text><text class='small_font'>身高 cm</text></view>
+          <view><text class="alltime">{{infos.weight}}</text><text class='small_font'>体重 kg</text></view>
+        </view>
+        <view wx:else><text class="stwte">查看您的数据，请先去登录！</text></view>   
+      </view>
+      <navigator url="../personal/about/about" class='my_collect card_small flex'>
+        <view class='flex'>
+          <image class='small_icon' src='/pulic/icon/sc.png'></image>
+          <text class='tspx'>关于我们</text>
+        </view>
+        <view><image class='top_message_right' src='/pulic/icon/right.png'></image></view>
+      </navigator>
+      <navigator url="../personal/feedback/feedback" class='my_purse card_small flex'>
+        <view class='flex'>
+          <image class='small_icon' src='/pulic/icon/mb.png'></image>
+          <text class='tspx'>意见反馈</text>
+        </view>
+        <view><image class='top_message_right' src='/pulic/icon/right.png'></image></view>
+      </navigator>
+    <navigator wx:if="{{!infos==''}}" bindtap="end" class='my_order card_small flex'>
+      <view class='flex'>
+          <image class='small_icon' src='/pulic/icon/dd.png'></image>
+          <text class='tspx'>退出登录</text>
+        </view>
+        <view><image class='top_message_right' src='/pulic/icon/right.png'></image></view>
+    </navigator>
+  </view>
+</view>

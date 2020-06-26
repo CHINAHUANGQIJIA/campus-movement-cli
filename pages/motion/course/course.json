@@ -1,0 +1,7 @@
+
+{ 
+  "usingComponents": {
+    "tabbar": "../../../custom_bar/custom_bar"
+  },
+  "enablePullDownRefresh": true
+}

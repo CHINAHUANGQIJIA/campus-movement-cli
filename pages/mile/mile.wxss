@@ -1,0 +1,227 @@
+page {
+  width: 100%;
+  height: 100%;
+}
+.mail-info {
+  margin: 30rpx;
+
+}
+.mail-info-ico {
+  width: 50rpx;
+  height: 50rpx;
+  margin-top: 10rpx;
+}
+.mail-info-tap {
+  position: absolute;
+  margin-top: -120rpx;
+}
+.mail-info-avatar {
+  width: 150rpx; 
+  height: 150rpx;
+  border-radius: 100rpx;
+  border: 1px solid white;
+}
+
+.mail-info-bg {
+  width: 100%;
+  height: 28%;
+}
+
+.mail-info-title {
+  font-size: large;
+  width: 300rpx;
+  font-weight: bold;
+  position: absolute;
+  left: 200rpx;
+  margin-top: -150rpx;
+  display: flex;
+  color: white;
+}
+.mail-info-tap-text {
+  margin-left: 200rpx;
+  margin-top: -60rpx;
+  font-size: 32rpx;
+  color: rgb(50, 50, 50);
+}
+.mail-info-content {
+  position: absolute;
+  margin-top: 60rpx;
+}
+.mail-info-content-one {
+  margin: 10rpx;
+}
+.mail-info-content-text {
+  font-size: 34rpx;
+  color: rgb(109, 104, 104);
+  margin: 10rpx;
+}
+.qian{
+  margin-left: 60rpx;
+  margin-top: 10rpx;
+  width: 600rpx;
+}
+
+.mail-info-btn {
+  position: absolute;
+  margin-top: 200rpx;
+  width: 700rpx;
+  display: flex;
+  margin-left: 30rpx;
+}
+
+.mail-info-tap-beizhu {
+  width: 45rpx;
+  height: 45rpx;
+  margin: 10rpx;
+}
+.mail-info-back {
+  position: absolute;
+  left: 40rpx;
+  top: 90rpx;
+  color: white;
+  display: flex;
+}
+.iconn1{
+  height: 50rpx;
+  width: 50rpx;
+  position: absolute;
+  top: 37rpx;
+  left: -50rpx;
+  z-index: 99;
+}
+.iconn2{
+  height: 50rpx;
+  width: 50rpx;
+  position: absolute;
+  top: 37rpx;
+  left: -50rpx;
+  z-index: 99;
+}
+.iconn3{
+  height: 50rpx;
+  width: 50rpx;
+  position: absolute;
+  top: 37rpx;
+  left: -50rpx;
+  z-index: 99;
+}
+
+.cells-item {
+  position: relative;
+}
+.mail-info-place {
+  width: 50rpx;
+  height: 50rpx;
+  
+}
+
+.mail-info-place-down {
+  position:absolute;
+  bottom:0;
+}
+
+
+
+
+.cells {
+  margin-top: 100rpx;
+  width: 600rpx;
+  margin-left: 120rpx;
+}
+
+.cells .item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 40rpx 30rpx;
+  border-bottom: 1rpx solid #e2e1e1;
+  background-color: #fff;
+
+  font-size: 30rpx;
+
+  
+}
+.rights{
+ width:560rpx;
+ 
+ margin-left: 90rpx;
+ background-color: #fff;
+ position: absolute;
+text-overflow:ellipsis;
+word-wrap:break-word;
+border-bottom: 1rpx solid  #e2e1e1;
+padding-right: 30rpx;
+padding-bottom: 30rpx;
+padding-left:30rpx ;
+font-size: 30rpx;
+}
+.ge{
+  margin-left: -8rpx;
+}
+.items {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 40rpx 30rpx;
+
+  background-color: #fff;
+
+  font-size: 30rpx;
+  
+}
+
+.cells .item::after {
+  content: '';
+  display: inline-block;
+  height: 10rpx;
+  width: 10rpx;
+  border: 0 solid #ccc;
+  border-width: 3rpx 3rpx 0 0;
+
+  margin-right: 20rpx;
+  transform: matrix(1, 1, -1, 1, 0, 0);
+}
+.items::after {
+  content: '';
+  display: inline-block;
+  height: 10rpx;
+  width: 10rpx;
+  margin-left: 40rpx;
+  border: 0 solid #ccc;
+  border-width: 3rpx 3rpx 0 0;
+
+  margin-right: 20rpx;
+  transform: matrix(1, 1, -1, 1, 0, 0);
+}
+
+.cells .item .right {
+  position: absolute;
+  right: 100rpx;
+}
+
+.avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 330rpx;
+
+}
+
+
+
+.cells .item .right {
+  position: absolute;
+  right: 100rpx;
+}
+.bb{
+  background-color: rgb(255, 176, 58);
+  color: rgb(255, 255, 255);
+}
+.bbs{
+  background-color: rgb(237, 235, 235);
+  color: black;
+}

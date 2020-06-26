@@ -1,0 +1,55 @@
+<view>
+  <!--这个按钮来触发弹窗的打开-->
+  <dialog id="dialog"
+      title="基本信息修改"
+      confirmText="确定"
+      cancelText="取消"
+      content="{{dialogContent}}"
+      bind:cancel="handleCancelDialog"
+       bind:confirmname="handleConfirmDialogname"
+      bind:confirmsex="handleConfirmDialogsex"
+      bind:confirmadd="handleConfirmDialogadd"
+      bind:confirm="handleConfirmDialog"
+      >
+
+   </dialog>
+</view>
+
+
+<view class="avatar">
+
+  <image src="{{infos.avatar}}" mode="aspecFill" bindtap="headimage"></image>
+
+</view>
+
+<view class="cells">
+  
+
+  <navigator   class="item">
+
+
+    <text>账号</text>
+    <text class="right">{{infos.userAccount}}</text>
+  </navigator>
+  <navigator  bindtap="submitDataname" class="item">
+
+    <text>姓名</text>
+    <text class="right">{{infos.userName}}</text>
+  </navigator>
+
+  <navigator bindtap="submitDatasex" class="item">
+    <text>性别</text>
+    <text class="right">{{infos.gender}}</text>
+  </navigator>
+
+  <navigator bindtap="submitDataadd" class="item">
+    <text>地址</text>
+    <text class="right">{{infos.address}}</text>
+  </navigator>
+
+    <navigator bindtap="submitDataqian" class="items" style="border-bottom: 0rpx solid #dbdada;">
+    <text>个性签名</text>
+   
+  </navigator>
+  </view>
+   <text class="rights">{{infos.signature}}</text>

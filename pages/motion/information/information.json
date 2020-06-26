@@ -1,0 +1,8 @@
+
+{ 
+  "navigationBarTitleText": "运动信息",
+  "usingComponents": {
+    "tabbar": "../../../custom_bar/custom_bar"
+  },
+  "enablePullDownRefresh": true
+}

@@ -1,0 +1,25 @@
+/* components/momeyCard/money-card.wxss */
+.cardList{
+  display: flex;
+  flex-direction: row;
+  padding: 10rpx;
+  flex-wrap: wrap;
+  margin-top: 20rpx;
+}
+.money-card{
+  flex: 0 0 47%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 140rpx;
+  border-radius: 15rpx;
+  margin: 10rpx;
+  box-shadow: 2rpx 2rpx 5rpx rgb(93,177,234);
+  border: 1rpx solid rgb(93,177,234);
+  font-size: 32rpx;
+}
+.zhidingyi-money{
+  font-size: 30rpx;
+  color: rgb(191, 176, 176);
+  margin-left: 85rpx;
+}

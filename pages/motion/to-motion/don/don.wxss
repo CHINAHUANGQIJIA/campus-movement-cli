@@ -1,0 +1,189 @@
+.mapView {
+  width: 100%;
+  height: 1490rpx;
+}
+
+
+.fan{
+  text-align: center;
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 13rpx;
+  margin-top: 15rpx;
+  
+}
+.btn-text{
+  font-weight: 900;
+  font-size: 36rpx;
+  color: rgb(45, 46, 46);
+  height: 50rpx;
+}
+.fanbtn{
+  padding-top: 10rpx;
+  width: 120rpx;
+  height: 65rpx;
+  position: absolute;
+  top: 70rpx;
+left: 20rpx;
+text-align: center;
+padding-bottom: -10rpx;
+  background-color: rgb(255, 255, 255);
+  border-radius: 1000rpx;
+}
+.hui{
+  width: 70rpx;
+  height: 70rpx;
+}
+.huibtn{
+  width: 70rpx;
+  height: 70rpx;
+  position: absolute;
+bottom: 630rpx;
+left: 20rpx;
+  background-color: rgb(255, 255, 255);
+  border-radius: 1000rpx;
+}
+.huibtns{
+  width: 70rpx;
+  height: 70rpx;
+  position: absolute;
+bottom: 630rpx;
+left: 100rpx;
+  background-color: rgb(255, 255, 255);
+  border-radius: 1000rpx;
+}
+.btns {
+  width: 25%;
+  height: 100rpx;
+  margin-top: 50rpx;
+  border-radius: 1000rpx;
+  background-color: rgb(54, 204, 139);
+  line-height: 60rpx;
+  text-align: center;
+  color: white;
+
+  position: absolute;
+  bottom: 80rpx;
+  left: 25%;
+}
+.card{
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 700rpx;
+  height:350rpx;
+  position: absolute;
+  margin-left: 25rpx;
+  bottom: 250rpx;
+  border-radius: 8rpx;
+}
+.card-1{
+  margin-top: 12rpx;
+  width: 100%;
+  height: 15%;
+
+}
+.card-1-text{
+  font-size: 22rpx;
+  color: rgb(186, 188, 190);
+  margin-left: 40rpx;
+}
+.card-2{
+
+  width: 100%;
+  height: 33%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.card-2-1{
+
+  width: 300rpx;
+  height: 100%;
+
+}
+.card-2-1-text1{
+font-size: 80rpx;
+font-weight: 900;
+width: 320rpx;
+margin-left: 40rpx;
+}
+.card-2-1-text2{
+font-size: 24rpx;
+}
+.card-2-2{
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 400rpx;
+  height: 100%;
+
+}
+.card-2-1-right{
+  width: 250rpx;
+  height: 100%;
+  margin-left: 140rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+.card-2-2-text1{
+  font-size: 26rpx;
+  width: 300rpx;
+  margin-top: 10rpx;
+  }
+  .card-2-2-text2{
+    font-size: 22rpx;
+    width: 500rpx;
+    color: rgb(186, 188, 190);
+    }
+.card-3{
+  border-top: rgb(39, 187, 207) 8rpx solid;
+  width: 100%;
+  height: 4%;
+}
+.card-4{
+
+  width: 100%;
+  height: 46%;
+}
+.fen-1-5-ve1{
+  text-align: center;
+}
+.fen-1-5-ve2{
+  text-align: center;
+}
+.fen-1-5-ve3{
+  text-align: center;
+}
+.fen-1-5-ve1-3-text{
+  font-size: 26rpx;
+  color: rgb(120, 122, 122);
+}
+.fen-1-5-ve2-3-text{
+  font-size: 26rpx;
+  color: rgb(120, 122, 122);
+}
+.fen-1-5-ve3-3-text{
+  font-size: 26rpx;
+  color: rgb(120, 122, 122);
+}
+.fen-1-5-ve1-2-text{
+font-weight: 900;
+}
+.fen-1-5-ve2-2-text{
+  font-weight: 900;
+  }
+  .fen-1-5-ve3-2-text{
+    font-weight: 900;
+    }
+    .infosimage{
+      width: 100rpx;
+      height: 100rpx;
+      border-radius: 1000rpx;
+      position: absolute;
+      bottom: 300rpx;
+      margin-left: 60rpx;
+
+    }

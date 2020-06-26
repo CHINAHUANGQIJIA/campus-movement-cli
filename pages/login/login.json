@@ -1,0 +1,8 @@
+
+
+{
+  "usingComponents": {
+    "login-input":"/components/login_input/login_input"
+  }
+
+}

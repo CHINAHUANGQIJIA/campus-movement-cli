@@ -1,0 +1,26 @@
+<!--components/login_input/login_input.wxml-->
+			<!-- 注册输入框 -->
+		<view class="login-margin" wx:if="{{telTab}}">
+			<image wx:if="{{image}}" class="login-image" src="https://jojoho.oss-cn-beijing.aliyuncs.com/images/2020-06-24/1592983632778141.png" />
+			<input bindinput="phoneInput" class="login-input" maxlength="11" placeholder="请输入11位数字账号" placeholder-class="phcolor" type="number" auto-focus="true" />
+			<view  class="login-line"></view>
+		</view>
+
+		<view class="login-margin" wx:if="{{telTab}}">
+			<image wx:if="{{image}}" class="login-image" src="https://jojoho.oss-cn-beijing.aliyuncs.com/images/2020-06-24/1592983730564114.png" />
+			<input bindinput="renameInput" class="login-input" maxlength="10"  placeholder="请输入小于等于十个字的用户名" placeholder-class="phcolor" type="text" />
+			<view  class="login-line"></view>
+		</view>
+
+				<view class="login-margin" wx:if="{{telTab}}">
+			<image wx:if="{{image}}" class="login-image" src="https://jojoho.oss-cn-beijing.aliyuncs.com/images/2020-06-24/159298383761592.png" />
+			<input bindinput="repasswordInput" class="login-input" maxlength="6" placeholder="请输入六位密码" placeholder-class="phcolor" type="password" />
+			<view  class="login-line"></view>
+		</view>
+
+				<view class="login-margin" wx:if="{{telTab}}">
+			<image wx:if="{{image}}" class="login-image" src="https://jojoho.oss-cn-beijing.aliyuncs.com/images/2020-06-24/159298383761592.png" />
+			<input bindinput="repasswordsInput" class="login-input" maxlength="6" placeholder="再次请输入六位密码" placeholder-class="phcolor" type="password" />
+			<view  class="login-line"></view>
+		</view>
+

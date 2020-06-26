@@ -1,0 +1,92 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/motion/information/information",
+    "pages/motion/course/course",
+    "pages/personal/personal",
+    "pages/history/history",
+    "pages/index/search/search",
+    "pages/statistics/statistics",
+    "pages/personal/basic/basic",
+    "pages/masss/masss",
+    "pages/personal/about/about",
+    "pages/weather/weather",
+    "pages/motion/course/video/video",
+    "pages/personal/Calendar/Calendar",
+    "pages/personal/feedback/feedback",
+    "pages/news/news",
+    "pages/mile/mile",
+    "pages/motion/to-motion/to-motion",
+    "pages/motion/to-motion/run/run",
+    "pages/motion/to-motion/hui/hui",
+    "pages/motion/to-motion/record/record",
+    "pages/motion/to-motion/don/don",
+    "pages/login/login",
+    "pages/login/miss_password/miss_password",
+    "pages/login/miss_password/update_password",
+    "components/popup/popup"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "校园运动",
+    "navigationBarTextStyle":"black"
+    
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "requiredBackgroundModes": [
+    "audio"
+  ],
+  "debug": false,
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于导航线路展示"
+    }
+  },
+  "requiredBackgroundModes": [
+    "location"
+  ],
+  "tabBar": {
+    "custom": true,
+    "color": "#000000",
+    "selectedColor": "#000000",
+    "backgroundColor": "#000000",
+    "list": [
+    {
+      "pagePath": "pages/motion/information/information",
+      "text": "运动信息",
+      "iconPath": "image/tar/icon_zixun1.png",
+      "selectedIconPath": "image/tar/icon_zixun.png"
+    },
+    {
+      "pagePath": "pages/motion/course/course",
+      "text": "运动教学",
+      "iconPath": "image/tar/icon_tongxunlu.png",
+      "selectedIconPath": "image/tar/icon_tongxunlu2.png"
+    },
+    {
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "image/tar/icon_shouye2.png",
+      "selectedIconPath": "image/tar/icon_shouye.png"
+    },
+    {
+      "pagePath": "pages/motion/to-motion/to-motion",
+      "text": "去运动",
+      "iconPath": "image/tar/icon_xiaoxi.png",
+      "selectedIconPath": "image/tar/icon_xiaoxi2.png"
+    },
+    {
+      "pagePath": "pages/personal/personal",
+      "text": "我的",
+      "iconPath": "image/tar/icon_wode.png",
+      "selectedIconPath": "image/tar/icon_wode2.png"
+    }
+  ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

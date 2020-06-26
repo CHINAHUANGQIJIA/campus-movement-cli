@@ -1,0 +1,69 @@
+<!--pages/test/test.wxml-->
+  <map id="map" longitude="{{118.9433364}}" latitude="{{32.1194877}}" scale="14" markers="{{markers}}"  class='mapView' polyline='{{polyline}}'  subkey="YDYBZ-QBSRX-M4X4R-Z6JWA-YECKH-GQFCY">
+ 
+  </map>
+  <view class="huibtn">
+    <image class="hui" bindtap='moveMarker' src="../../../../image/info/bofang.png"></image>
+    </view>
+      <view class="huibtns">
+    <image class="hui" bindtap="origin" src="../../../../image/ditudingwei (1).png"></image>
+    </view>
+    <view class="fanbtn" bindtap="hui">
+    <text class="btn-text" >完成</text>
+    </view>
+
+   <view class='btn' bindtap="hui">完成</view>
+   <view class="card">
+   <view class="card-1">
+   <text class="card-1-text">School · 户外跑</text>
+   </view>
+      <view class="card-2">
+   <view class="card-2-1">
+
+      <text class="card-2-1-text1">{{onemli}}</text>
+   <text class="card-2-1-text2">公里</text>
+
+
+
+   </view>
+      <view class="card-2-2">
+         <view class="card-2-1-right">
+         <image class="infosimage" src="{{infos.avatar}}"></image>
+         <text class="card-2-2-text1">咆哮的{{infos.userName}}</text>
+   <text class="card-2-2-text2">{{onedaytime}}</text>
+      </view>
+   </view>
+
+   </view>
+      <view class="card-3">
+   
+   </view>
+     <view class="fen-1-5-ve1">
+<text class="fen-1-5-ve1-2-text" style="color:black;margin-top:10rpx;">{{onespeed}} m/s</text>
+<view class="fen-1-5-ve1-3">
+<text class="fen-1-5-ve1-3-text" style="color:black">均速</text>
+</view>
+
+
+
+</view>
+<view class="fen-1-5-ve2" style="whith">
+<text class="fen-1-5-ve2-2-text" style="color:black;margin-top:50rpx;">{{onetime}}</text>
+<view class="fen-1-5-ve2-3">
+<text class="fen-1-5-ve2-3-text" style="color:black">用时</text>
+</view>
+
+
+
+</view>
+<view class="fen-1-5-ve3">
+<text class="fen-1-5-ve3-2-text" style="color:black;margin-top:50rpx;">{{onemli}} km</text>
+<view class="fen-1-5-ve3-3">
+<text class="fen-1-5-ve3-3-text" style="color:black">里程</text>
+</view>
+
+
+
+
+</view>
+   </view>

@@ -1,0 +1,68 @@
+page {
+  background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(255, 255, 255));
+  background-attachment: fixed;
+}
+
+.page__hd {
+  line-height: 2.0;
+  font-family: -apple-system-font, Helvetica Neue, sans-serif;
+  padding: 80rpx 35rpx;
+  text-align: center;
+  background-image: linear-gradient(to top, rgb(232, 233, 233) 0%, #ffffff 100%);
+  box-shadow: 0 10rpx 35rpx #dee1e8;
+  border-radius: 0 0 20% 20%;
+  font-size: 42rpx;
+
+}
+.page__bd{
+  line-height: 1.6;
+  font-family: -apple-system-font, Helvetica Neue, sans-serif;
+}
+
+.page__title {
+  color: rgb(17, 17, 17);
+  font-weight: 600;
+}
+
+.page__desc {
+  font-size: 32rpx;
+  color: #0e0d0d;
+}
+
+.weui-media-box__thumb {
+  height: 70rpx;
+  width: 70rpx;
+}
+
+.weui-center {
+  text-align: center;
+  margin-top: 50rpx;
+  padding-bottom: 10rpx;
+}
+
+.weui-article {
+ font-family: serif;
+ line-height: 1.7;
+  padding: 40rpx 55rpx;
+  font-size: 27rpx;
+
+}
+
+.weui-article__p {
+  color: #333;
+  font-size: 34rpx;
+  
+}
+.weui-btn1{
+  padding: 20rpx;
+  color: white;
+  margin-right: 40rpx;
+  background-image: linear-gradient(-45deg, #f59453 0%, #f9f297 100%);
+
+}
+.weui-btn2{
+  padding: 20rpx;
+  color: white;
+  background-image: linear-gradient(-45deg, #f59453 0%, #f9f297 100%);
+
+}

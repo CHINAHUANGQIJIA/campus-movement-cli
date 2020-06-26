@@ -1,0 +1,97 @@
+/*整体 */
+.row{
+  display: flex;
+}
+/* 组件 */
+.wx-popup {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  min-height: 100vh;
+  background: rgba(0, 0, 0, .5);
+}
+
+.popup-container {
+  z-index: 100000;
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  width: 100%;
+  max-width: 700rpx;
+  border: 2rpx solid #ccc;
+  border-radius: 10rpx;
+  box-sizing: bordre-box;
+  transform: translate(-50%, -50%); 
+  overflow: hidden;
+  background: #fff;
+
+}
+.box{
+  background-image: linear-gradient(to bottom, #6AAFE6,rgb(180, 235, 255));
+  color: white;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}
+.box-a{
+  text-align: center;
+  width: 30%;
+  display: flex;
+   padding-left: 10rpx;
+   font-size: 50rpx;
+}
+.box-b{
+  width: 30%;
+  text-align: center;
+}
+.box-c{
+  width: 30%;
+  text-align: center;
+
+}
+.box-a-img{
+  height: 70rpx;
+  width: 70rpx;
+  z-index: 20;
+}
+.card{
+  padding: 20rpx;
+  background-color: white;
+}
+.card-a{
+  margin-bottom: 20rpx;
+}
+.card-a-txt{
+  color: #6AAFE6;
+  font-weight: 500;
+  font-size: 35rpx;
+}
+.wx-popup-btn {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20rpx;
+}
+.btn-ok{
+  border: 1rpx solid #6AAFE6;
+  color: #6AAFE6;
+  height: 70rpx;
+  width: 70rpx;
+  text-align: center;
+  line-height: 70rpx;
+  border-radius: 50%;
+}
+.san{
+  text-align: center;
+  color: gray;
+}
+.san-card{
+  background-image: linear-gradient(to bottom, #6AAFE6,rgb(180, 235, 255));
+  width: 30%;
+  border-radius: 20rpx;
+  margin: 20rpx;
+  color: white;
+}
+.one-img{
+  height: 70rpx;
+  width: 70rpx;
+}

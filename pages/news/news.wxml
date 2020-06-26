@@ -1,0 +1,8 @@
+<!--pages/news/news.wxml-->
+<!-- <view><text>{{item.title}}</text></view> -->
+<image class="im" src="{{item.url}}"></image>
+<view class="view">
+<text class="itemtext">{{item.content}}</text>
+
+</view>
+<text class="time">{{item.time}}·校园运动</text>

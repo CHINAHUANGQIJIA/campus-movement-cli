@@ -1,0 +1,21 @@
+<view class="page__hd">
+  <image class="weui-media-box__thumb" src=" https://jojoho.oss-cn-beijing.aliyuncs.com/images/2020-06-04/159123600632580.png" />
+  <view class="page__title">「校园运动」1.0.0.0</view>
+  <view class="page__desc">我们提供运动记录服务，运动轨迹服务，运动课程服务，运动资讯服务，敬请期待！。</view>
+</view>
+<view class="page__bd">
+  <view class="weui-article">
+      <view class="weui-article__p" style="color:#f59453;font-weight: 600;">学习交流：</view>
+    <view class="weui-article__p">「校园运动」诚挚的欢迎关联小程序,并期待与您交流学习(AppID：wx8202815ea2fb4758)</view>
+    <view class="weui-article__p" style="color:#f59453;font-weight: 600;">技术支持：</view>
+    <view class="weui-article__p">· 南工院软件1851：黄启佳</view>
+    <view class="weui-article__p">· QQ:1559022933 / Wechat:HQJ991010</view>
+    <view class="weui-article__p">· 目前校园运动的功能正在逐渐增加中。</view>
+    <view class="weui-article__p">· 立志成为广大学子的好帮手。</view>
+     <view class="weui-article__p">· 如果你在使用中有问题或建议,请点击下方联系客服。感谢你的支持和使用,谢谢！</view>
+    <view class="weui-center">
+      <button class="weui-btn1 mini-btn" size="mini" open-type="contact">联系客服</button>
+      <button class="weui-btn2 mini-btn" size="mini" open-type="share">分享朋友</button>
+    </view>
+  </view>
+</view>

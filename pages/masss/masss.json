@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "身体数据",
+  "usingComponents": {
+    "scale": "/components/w-scale/w-scale"
+  }
+}

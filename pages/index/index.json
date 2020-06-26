@@ -1,0 +1,10 @@
+
+{ 
+  "usingComponents": {
+    "tabbar": "../../custom_bar/custom_bar",
+    "circle": "/components/circle/circle",
+    "popup": "/components/popup/popup"
+  },
+
+  "enablePullDownRefresh": true
+}

@@ -1,0 +1,233 @@
+/* pages/motion/to-motion/record/record.wxss */
+.card{
+  width: 92%;
+  height: 218rpx;
+  margin-left: 31rpx;
+  margin-top: 20rpx;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 8rpx;
+  flex-wrap: wrap;
+  z-index: 99;
+  position: relative;
+  top: -130rpx;
+  background-color: rgb(245, 244, 242);
+}
+.apply-img{
+  height: 200rpx;
+  width: 300rpx;
+  z-index: 9;
+
+}
+.apply-img {
+
+  margin: 0 auto;
+  width: 100%;
+  height: 470rpx;
+
+}
+.time-text{
+  width: 500rpx;
+  height: 10%;
+  font-size: 24rpx;
+  margin-left: 50rpx;
+}
+.type-text{
+
+  font-size: 24rpx;
+}
+.card-image{
+  width: 30%;
+  height: 100%;
+  z-index: 0;
+  display:block;
+}
+.im{
+  width: 205rpx;
+  height: 220rpx;
+  z-index: 0;
+  border-radius: 8rpx 0 0 0;
+  display:block;
+}
+.card-tt{
+  width: 70%;
+  height: 70%;
+}
+.fen-1-5 {
+
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 70%;
+  margin-top: 20rpx;
+
+
+}
+.fen-1-5-ve1 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 33.3%;
+  height: 100%;
+
+}
+
+.fen-1-5-ve2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 33.3%;
+  height: 100%;
+
+}
+
+.fen-1-5-ve3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 33.3%;
+  height: 100%;
+
+}
+
+.fen-1-5-ve1-1 {
+  height: 40rpx;
+  width: 40rpx;
+  text-align: center;
+  align-items: center;
+}
+
+.fen-1-5-ve1-2 {
+  height: 15%;
+  width: 100%;
+
+  text-align: center;
+  align-items: center;
+}
+.fen-1-5-ve1-2-text{
+  color: black;
+  font-size: 32rpx;
+  font-weight: 600;
+  padding-top: 40rpx;
+}
+.fen-1-5-ve1-3 {
+  height: 60%;
+  width: 100%;
+  margin-top: 20rpx;
+
+  text-align: center;
+  align-items: center;
+}
+.fen-1-5-ve1-3-text{
+  font-size: 24rpx;
+  color: black;
+}
+.fen-1-5-ve2-1 {
+  height: 40rpx;
+  width: 40rpx;
+  text-align: center;
+  align-items: center;
+}
+
+.fen-1-5-ve2-2 {
+  height: 15%;
+  width: 100%;
+
+  text-align: center;
+  align-items: center;
+}
+.fen-1-5-ve2-2-text{
+  color: black;
+  font-size: 32rpx;
+  font-weight: 600;
+}
+
+.fen-1-5-ve2-3 {
+  height: 60%;
+  width: 100%;
+  margin-top: 20rpx;
+  text-align: center;
+  align-items: center;
+}
+.fen-1-5-ve2-3-text{
+  font-size: 24rpx;
+  color: black;
+}
+
+.fen-1-5-ve3-1 {
+  height: 40rpx;
+  width: 40rpx;
+  text-align: center;
+  align-items: center;
+}
+
+.fen-1-5-ve3-2 {
+  height: 15%;
+  width: 100%;
+
+  text-align: center;
+  align-items: center;
+}
+.fen-1-5-ve3-2-text{
+  color:black;
+  font-size: 32rpx;
+  font-weight: 600;
+}
+.fen-1-5-ve3-3 {
+  height: 60%;
+  width: 100%;
+  margin-top: 20rpx;
+  text-align: center;
+  align-items: center;
+}
+.fen-1-5-ve3-3-text{
+  font-size: 24rpx;
+  color: black;
+}
+
+.type-text{
+  width: 500rpx;
+  height: 10%;
+}
+.view-icon{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 1000rpx;
+  z-index: 999;
+  background-color: darkgoldenrod;
+}
+.icon{
+  width: 50rpx;
+  height: 50rpx;
+  z-index: 999;
+}
+.jiji{
+  width: 92%;
+  height: 500rpx;
+  margin-top: 150rpx;
+  margin-left: 32rpx;
+}
+.btn-text{
+  font-weight: 900;
+  font-size: 48rpx;
+
+  color: rgb(255, 255, 255);
+  height: 50rpx;
+}
+.fanbtn{
+  text-align: center;
+  padding-top: 10rpx;
+  width: 500rpx;
+  height: 80rpx;
+  position: absolute;
+  top: 730rpx;
+left: 18%;
+text-align: center;
+padding-bottom: -10rpx;
+  background-color: rgb(98, 223, 245);
+  border-radius: 1000rpx;
+}
+.hui{
+  width: 70rpx;
+  height: 70rpx;
+}
